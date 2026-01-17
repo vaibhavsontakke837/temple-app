@@ -1,0 +1,125 @@
+{
+  "templeName": "Shr....",
+  "templeSubtitle": "Spiritual place of peace & devotion",
+
+  "quickAccess": "Quick Access",
+  "about": "About",
+  "gallery": "Gallery",
+  "audio": "Audio / Video",
+  "events": "Events",
+  "aarti": "Aarti",
+  "location": "Location",
+
+  "language": "Language",
+  "english": "English",
+  "marathi": "Marathi",
+
+  "upcomingEvents": "Upcoming Events",
+  "viewAllEvents": "View All Events",
+
+  "blessing": "Blessing",
+  "blessingMessage": "May Shree Maharaj bless all devotees with peace, health and prosperity.",
+
+  "donation": "Donation",
+  "contact": "Contact",
+  "settings": "Settings",
+
+  "dailyTimings": "Temple Timings",
+  "openTime": "Open Time",
+  "closeTime": "Close Time",
+
+  "eventsData": {
+    "ekadashi": {
+      "date": "05 March 2025",
+      "title": "Ekadashi Abhishek",
+      "desc": "Early morning abhishek and spiritual discourse.",
+      "notifyAt": "2026-01-01T06:00:00"
+    },
+    "mahaAarti": {
+      "date": "05 March 2025",
+      "title": "Maha Aarti",
+      "desc": "Special evening aarti with bhajan and prasadam.",
+      "notifyAt": "2026-01-01T07:00:00"
+    },
+    "annualYatra": {
+      "date": "05 March 2025",
+      "title": "Annual Yatra",
+      "desc": "Grand procession and pooja ceremony.",
+      "notifyAt": "2026-01-01T08:00:00"
+    }
+  },
+  "aartiData": {
+  "aarti1": {
+    "title": "Maha Aarti",
+    "desc": "Special evening aarti with bhajan and prasadam."
+  },
+  "aarti2": {
+    "title": "Morning Aarti",
+    "desc": "Morning aarti performed at dawn."
+  },
+  "aarti3": {
+    "title": "Evening Aarti",
+    "desc": "Evening devotional aarti with lamps and chants."
+  },
+  "audioVideo": "Audio & Video",
+  "audioSection": "Audio",
+  "videoSection": "Video",
+
+  "audioData": {
+    "audio1": {
+      "title": "Morning Bhajan",
+      "desc": "Peaceful bhajan to start the day"
+    },
+    "audio2": {
+      "title": "Evening Pravachan",
+      "desc": "Spiritual discourse in the evening"
+    }
+  },  
+  "videoData": {
+    "video1": {
+      "title": "Maha Aarti",
+      "desc": "Sacred evening aarti ceremony"
+    },
+    "video2": {
+      "title": "Annual Yatra",
+      "desc": "Highlights from the annual yatra"
+    }
+  },
+   "drawer": {
+    "home": "Home",
+    "about": "About Temple",
+    "gallery": "Gallery",
+    "audioVideo": "Audio & Video",
+    "events": "Events",
+    "donation": "Donation",
+    "contact": "Contact",
+    "settings": "Settings"
+  }
+  },
+  "temples": {
+    "pandharpur": {
+      "name": "Pandharpur Temple",
+      "village": "Pandharpur",
+      "address": "Near Chandrabhaga River, Pandharpur",
+      "contact": "+91 99999 99999"
+    },
+    "alandi": {
+      "name": "Alandi Temple",
+      "village": "Alandi",
+      "address": "Alandi Devachi, Pune",
+      "contact": "+91 98888 88888"
+    },
+    "dehu": {
+      "name": "Dehu Temple",
+      "village": "Dehu",
+      "address": "Dehu Road, Pune",
+      "contact": "+91 97777 77777"
+    },
+    "jeur": {
+      "name": "Jeur Temple",
+      "village": "Jeur",
+      "address": "Jeur, Solapur",
+      "contact": "+91 96666 66666"
+    }
+  } 
+}

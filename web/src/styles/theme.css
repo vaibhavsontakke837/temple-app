@@ -1,0 +1,61 @@
+:root {
+  --primary: #ff6a00;
+  --maroon: #7a1e1e;
+  --gold: #e4b343;
+  --cream: #fff5e7;
+  --deep: #4a2c2a;
+  --s-sm: 12px;
+  --s-md: 18px;
+  --r-md: 14px;
+  --card-shadow: 0 10px 30px rgba(74, 44, 42, 0.06);
+}
+body {
+  background: var(--cream);
+  color: var(--deep);
+  font-family: Inter, system-ui, sans-serif;
+}
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: var(--r-md);
+  padding: var(--s-md);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(6px);
+}
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--deep);
+}
+.iconTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  width: 120px;
+}
+.iconBox {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--card-shadow);
+}
+.btnPrimary {
+  background: var(--primary);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 18px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}

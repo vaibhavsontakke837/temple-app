@@ -1,0 +1,25 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "components/Card.js",
+    "components/themed-text.js",
+    "components/ui/icon-symbol.js",
+    "components/ui/icon-symbol.ios.js",
+    "components/ui/collapsible.js",
+    "components/external-link.js",
+    "components/haptic-tab.js",
+    "components/hello-wave.js",
+    "components/parallax-scroll-view.js",
+    "components/themed-view.js"
+  ]
+}
