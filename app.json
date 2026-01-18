@@ -7,7 +7,6 @@
     "icon": "./assets/gallery/icon.png",
     "scheme": "templeapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": false,
     "ios": {
       "supportsTablet": true
     },
@@ -20,7 +19,8 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.templeapp"
+      "package": "com.anonymous.templeapp",
+      "newArchEnabled": true
     },
     "web": {
       "output": "static",
