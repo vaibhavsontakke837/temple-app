@@ -12,7 +12,7 @@ expo-env.d.ts
 *.local
 
 # Debug / logs
-npm-debug.*
+npm-debug.* 
 yarn-debug.*
 yarn-error.*
 
@@ -24,11 +24,12 @@ yarn-error.*
 
 # Generated native folders (we don’t commit build outputs)
 /ios/build/
-/android/build/
+android/build/
 
-/# Keep gradle properties & keystore if you want to commit for EAS
+# Keep gradle properties for EAS
 !android/gradle.properties
 !android/app/gradle.properties
+
 # Keystores can remain ignored for security:
 *.jks
 *.p12
