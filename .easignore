@@ -1,0 +1,20 @@
+# Ignore local dev artifacts
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Debug / local files
+*.log
+.env*
+*.orig.*
+.DS_Store
+
+# Ignore build outputs
+android/build/
+ios/build/
+
+# Keep android/gradle.properties in the build
+!android/gradle.properties
+!android/app/gradle.properties

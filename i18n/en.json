@@ -49,77 +49,84 @@
     }
   },
   "aartiData": {
-  "aarti1": {
-    "title": "Maha Aarti",
-    "desc": "Special evening aarti with bhajan and prasadam."
-  },
-  "aarti2": {
-    "title": "Morning Aarti",
-    "desc": "Morning aarti performed at dawn."
-  },
-  "aarti3": {
-    "title": "Evening Aarti",
-    "desc": "Evening devotional aarti with lamps and chants."
-  },
-  "audioVideo": "Audio & Video",
-  "audioSection": "Audio",
-  "videoSection": "Video",
-
-  "audioData": {
-    "audio1": {
-      "title": "Morning Bhajan",
-      "desc": "Peaceful bhajan to start the day"
-    },
-    "audio2": {
-      "title": "Evening Pravachan",
-      "desc": "Spiritual discourse in the evening"
-    }
-  },  
-  "videoData": {
-    "video1": {
+    "aarti1": {
       "title": "Maha Aarti",
-      "desc": "Sacred evening aarti ceremony"
+      "desc": "Special evening aarti with bhajan and prasadam."
     },
-    "video2": {
-      "title": "Annual Yatra",
-      "desc": "Highlights from the annual yatra"
-    }
-  },
-   "drawer": {
-    "home": "Home",
-    "about": "About Temple",
-    "gallery": "Gallery",
+    "aarti2": {
+      "title": "Morning Aarti",
+      "desc": "Morning aarti performed at dawn."
+    },
+    "aarti3": {
+      "title": "Evening Aarti",
+      "desc": "Evening devotional aarti with lamps and chants."
+    },
     "audioVideo": "Audio & Video",
-    "events": "Events",
-    "donation": "Donation",
-    "contact": "Contact",
-    "settings": "Settings"
-  }
+    "audioSection": "Audio",
+    "videoSection": "Video",
+
+    "audioData": {
+      "audio1": {
+        "title": "Morning Bhajan",
+        "desc": "Peaceful bhajan to start the day"
+      },
+      "audio2": {
+        "title": "Evening Pravachan",
+        "desc": "Spiritual discourse in the evening"
+      }
+    },
+    "videoData": {
+      "video1": {
+        "title": "Maha Aarti",
+        "desc": "Sacred evening aarti ceremony"
+      },
+      "video2": {
+        "title": "Annual Yatra",
+        "desc": "Highlights from the annual yatra"
+      }
+    },
+    "drawer": {
+      "home": "Home",
+      "about": "About Temple",
+      "gallery": "Gallery",
+      "audioVideo": "Audio & Video",
+      "events": "Events",
+      "donation": "Donation",
+      "contact": "Contact",
+      "settings": "Settings"
+    }
   },
   "temples": {
     "pandharpur": {
-      "name": "Pandharpur Temple",
+      "name": "Pandharpur",
+      "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Pandharpur",
       "village": "Pandharpur",
       "address": "Near Chandrabhaga River, Pandharpur",
       "contact": "+91 99999 99999"
     },
     "alandi": {
       "name": "Alandi Temple",
+      "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Alandi",
+
       "village": "Alandi",
       "address": "Alandi Devachi, Pune",
       "contact": "+91 98888 88888"
     },
     "dehu": {
       "name": "Dehu Temple",
+      "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Dehu",
+
       "village": "Dehu",
       "address": "Dehu Road, Pune",
       "contact": "+91 97777 77777"
     },
     "jeur": {
       "name": "Jeur Temple",
+      "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Jeur",
+
       "village": "Jeur",
       "address": "Jeur, Solapur",
       "contact": "+91 96666 66666"
     }
-  } 
+  }
 }
