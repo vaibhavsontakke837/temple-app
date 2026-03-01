@@ -46,6 +46,126 @@
       "title": "Annual Yatra",
       "desc": "Grand procession and pooja ceremony.",
       "notifyAt": "2026-01-01T08:00:00"
+    },
+    "papmochaniEkadashi": {
+      "date": "15 March 2026",
+      "title": "Papmochani Ekadashi",
+      "desc": "Phalguna Krishna Ekadashi believed to cleanse past sins.",
+      "notifyAt": "2026-03-15T08:00:00"
+    },
+    "kamadaEkadashi": {
+      "date": "29 March 2026",
+      "title": "Kamada Ekadashi",
+      "desc": "Chaitra Shukla Ekadashi observed for fulfillment of desires.",
+      "notifyAt": "2026-03-29T08:00:00"
+    },
+    "varuthiniEkadashi": {
+      "date": "13 April 2026",
+      "title": "Varuthini Ekadashi",
+      "desc": "Chaitra Krishna Ekadashi granting protection and spiritual growth.",
+      "notifyAt": "2026-04-13T08:00:00"
+    },
+    "mohiniEkadashi": {
+      "date": "27 April 2026",
+      "title": "Mohini Ekadashi",
+      "desc": "Vaishakha Shukla Ekadashi associated with Vishnu’s Mohini avatar.",
+      "notifyAt": "2026-04-27T08:00:00"
+    },
+    "aparaEkadashi": {
+      "date": "13 May 2026",
+      "title": "Apara Ekadashi",
+      "desc": "Vaishakha Krishna Ekadashi believed to remove accumulated sins.",
+      "notifyAt": "2026-05-13T08:00:00"
+    },
+    "kamalaEkadashiMay": {
+      "date": "27 May 2026",
+      "title": "Kamala Ekadashi (Apara Ekadashi)",
+      "desc": "Observed during Adhik period, considered highly auspicious.",
+      "notifyAt": "2026-05-27T08:00:00"
+    },
+    "kamalaEkadashi": {
+      "date": "11 June 2026",
+      "title": "Kamala Ekadashi (Kamala Ekadashi)",
+      "desc": "A highly auspicious Ekadashi observed during Adhik Maas.",
+      "notifyAt": "2026-06-11T08:00:00"
+    },
+    "nirjalaEkadashi": {
+      "date": "25 June 2026",
+      "title": "Nirjala Ekadashi",
+      "desc": "Jyeshtha Shukla Ekadashi observed with strict fast without water.",
+      "notifyAt": "2026-06-25T08:00:00"
+    },
+    "bhagwatEkadashi": {
+      "date": "11 July 2026",
+      "title": "Bhagwat Ekadashi (Yogini Ekadashi)",
+      "desc": "Ashadha Krishna Ekadashi observed for removal of sins and spiritual purification.",
+      "notifyAt": "2026-07-11T08:00:00"
+    },
+    "devshayaniEkadashi": {
+      "date": "25 July 2026",
+      "title": "Devshayani (Ashadhi) Ekadashi",
+      "desc": "Ashadha Shukla Ekadashi marking beginning of Chaturmas. Major Maharashtra festival.",
+      "notifyAt": "2026-07-25T08:00:00"
+    },
+    "kamikaEkadashi": {
+      "date": "09 August 2026",
+      "title": "Kamika Ekadashi",
+      "desc": "Shravana Krishna Ekadashi dedicated to Lord Vishnu.",
+      "notifyAt": "2026-08-09T08:00:00"
+    },
+    "putradaShravanaEkadashi": {
+      "date": "24 August 2026",
+      "title": "Shravana Putrada Ekadashi",
+      "desc": "Shravana Shukla Ekadashi observed for blessings of children.",
+      "notifyAt": "2026-08-24T08:00:00"
+    },
+    "ajaEkadashi": {
+      "date": "07 September 2026",
+      "title": "Aja Ekadashi",
+      "desc": "Bhadrapada Krishna Ekadashi granting liberation from sins.",
+      "notifyAt": "2026-09-07T08:00:00"
+    },
+    "parivartiniEkadashi": {
+      "date": "22 September 2026",
+      "title": "Parivartini Ekadashi",
+      "desc": "Bhadrapada Shukla Ekadashi marking Vishnu’s symbolic turning during Chaturmas.",
+      "notifyAt": "2026-09-22T08:00:00"
+    },
+    "indiraEkadashi": {
+      "date": "06 October 2026",
+      "title": "Indira Ekadashi",
+      "desc": "Ashwin Krishna Ekadashi observed for ancestors' peace.",
+      "notifyAt": "2026-10-06T08:00:00"
+    },
+    "papankushaEkadashi": {
+      "date": "22 October 2026",
+      "title": "Papankusha Ekadashi",
+      "desc": "Ashwin Shukla Ekadashi dedicated to Lord Vishnu, believed to remove sins.",
+      "notifyAt": "2026-10-22T08:00:00"
+    },
+    "ramaEkadashi": {
+      "date": "05 November 2026",
+      "title": "Rama Ekadashi",
+      "desc": "Kartika Krishna Ekadashi observed for prosperity and removal of sins before Prabodhini Ekadashi.",
+      "notifyAt": "2026-11-05T08:00:00"
+    },
+    "prabodhiniEkadashi": {
+      "date": "21 November 2026",
+      "title": "Prabodhini (Kartiki) Ekadashi",
+      "desc": "Kartika Shukla Ekadashi marking end of Chaturmas. Highly significant in Maharashtra.",
+      "notifyAt": "2026-11-21T08:00:00"
+    },
+    "utpannaEkadashi": {
+      "date": "04 December 2026",
+      "title": "Utpanna (Utpati) Ekadashi",
+      "desc": "Margashirsha Krishna Ekadashi marking the origin of Ekadashi vrat.",
+      "notifyAt": "2026-12-04T08:00:00"
+    },
+    "mokshadaEkadashi": {
+      "date": "20 December 2026",
+      "title": "Mokshada Ekadashi",
+      "desc": "Margashirsha Shukla Ekadashi associated with Bhagavad Gita Jayanti.",
+      "notifyAt": "2026-12-20T08:00:00"
     }
   },
   "aartiData": {
