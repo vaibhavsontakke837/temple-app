@@ -15,7 +15,7 @@ const GALLERY_DATA = [
   { id: "2", image: require("../assets/gallery/3.jpg") },
   { id: "2", image: require("../assets/gallery/4.jpg") },
   { id: "2", image: require("../assets/gallery/5.jpg") },
-  { id: "3", image: require("../assets/gallery/6.jpg") },
+  // { id: "3", image: require("../assets/gallery/6.jpg") },
   // { id: "4", image: require("../assets/gallery/4.jpg") },
 ];
 
@@ -32,10 +32,7 @@ export default function GalleryScreen() {
         numColumns={2}
         columnWrapperStyle={styles.row}
         renderItem={({ item }) => (
-          <ImageCard
-            source={item.image}
-            style={{ width: CARD_WIDTH }}
-          />
+          <ImageCard source={item.image} style={{ width: CARD_WIDTH }} />
         )}
         showsVerticalScrollIndicator={false}
       />
