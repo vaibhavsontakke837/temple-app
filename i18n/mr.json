@@ -7,7 +7,7 @@
   "gallery": "गॅलरी",
   "audio": "ऑडिओ / व्हिडिओ",
   "events": "कार्यक्रम",
-  "aarti": "आरती", 
+  "aarti": "आरती",
   "location": "स्थान",
 
   "language": "भाषा",
@@ -27,6 +27,10 @@
   "dailyTimings": "मंदिर वेळा",
   "openTime": "उघडण्याची वेळ",
   "closeTime": "बंद करण्याची वेळ",
+
+  "templeNameLabel": "मंदिराचे नाव",
+  "templeAddressLabel": "मंदिराचा पत्ता",
+  "templeContactLabel": "संपर्क",
 
   "eventsData": {
     "ekadashi": {
@@ -51,12 +55,13 @@
   "audioVideo": "ऑडिओ / व्हिडिओ",
   "audioSection": "ऑडिओ",
   "videoSection": "व्हिडिओ",
+
   "temples": {
-    "pandharpur": {
-      "name": "पंढरपूर मंदिर",
-      "village": "पंढरपूर",
-      "address": "चंद्रभागा नदीजवळ, पंढरपूर",
-      "contact": "+९१ ९९९९९ ९९९९९"
+    "viral": {
+      "name": "विराळ संस्थान",
+      "village": "विराळ",
+      "address": "मु.विराळ, ता.जळकोट, जि.लातुर, महाराष्ट्र",
+      "contact": "+91 9999 9999"
     },
     "alandi": {
       "name": "आळंदी मंदिर",
