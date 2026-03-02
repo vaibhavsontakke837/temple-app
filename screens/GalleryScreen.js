@@ -11,12 +11,9 @@ const CARD_WIDTH = (width - theme.spacing.md * 3) / 2;
 
 const GALLERY_DATA = [
   { id: "1", image: require("../assets/gallery/1.jpg") },
-  // { id: "2", image: require("../assets/gallery/2.jpg") },
   { id: "2", image: require("../assets/gallery/3.jpg") },
   { id: "3", image: require("../assets/gallery/4.jpg") },
   { id: "4", image: require("../assets/gallery/5.jpg") },
-  // { id: "3", image: require("../assets/gallery/6.jpg") },
-  // { id: "4", image: require("../assets/gallery/4.jpg") },
 ];
 
 export default function GalleryScreen() {
@@ -32,7 +29,11 @@ export default function GalleryScreen() {
         numColumns={2}
         columnWrapperStyle={styles.row}
         renderItem={({ item }) => (
-          <ImageCard source={item.image} style={{ width: CARD_WIDTH }} />
+          <ImageCard 
+            source={item.image} 
+            style={{ width: CARD_WIDTH }} 
+            showDownload={true}
+          />
         )}
         showsVerticalScrollIndicator={false}
       />
