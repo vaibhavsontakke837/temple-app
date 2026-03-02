@@ -72,7 +72,7 @@
     "mohiniEkadashi": {
       "date": "27 April 2026",
       "title": "Mohini Ekadashi",
-      "desc": "Vaishakha Shukla Ekadashi associated with Vishnu’s Mohini avatar.",
+      "desc": "Vaishakha Shukla Ekadashi associated with Vishnu's Mohini avatar.",
       "notifyAt": "2026-04-27T08:00:00"
     },
     "aparaEkadashi": {
@@ -132,7 +132,7 @@
     "parivartiniEkadashi": {
       "date": "22 September 2026",
       "title": "Parivartini Ekadashi",
-      "desc": "Bhadrapada Shukla Ekadashi marking Vishnu’s symbolic turning during Chaturmas.",
+      "desc": "Bhadrapada Shukla Ekadashi marking Vishnu's symbolic turning during Chaturmas.",
       "notifyAt": "2026-09-22T08:00:00"
     },
     "indiraEkadashi": {
@@ -188,7 +188,6 @@
     "audioVideo": "Audio & Video",
     "audioSection": "Audio",
     "videoSection": "Video",
-
     "audioData": {
       "audio1": {
         "title": "Morning Bhajan",
@@ -232,7 +231,6 @@
     "dongarshelki": {
       "name": "Dongarshelki Devsthan",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Alandi",
-
       "village": "Alandi",
       "address": "Shri Samarth Dhondutatya Mandir Dongarshelki, Udgir - 413517, Maharashtra",
       "contact": "+91 98888 88888",
@@ -241,7 +239,6 @@
     "dehu": {
       "name": "Dehu Temple",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Dehu",
-
       "village": "Dehu",
       "address": "Dehu Road, Pune",
       "contact": "+91 97777 77777"
@@ -249,10 +246,26 @@
     "jeur": {
       "name": "Jeur Temple",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Jeur",
-
       "village": "Jeur",
       "address": "Jeur, Solapur",
       "contact": "+91 96666 66666"
+    }
+  },
+  "eventGallery": {
+    "event1": {
+      "title": "Annual Yatra 2024",
+      "images": ["1.jpg", "3.jpg", "4.jpg"],
+      "description": "Grand procession with thousands of devotees participating in the annual yatra. The event featured traditional music, bhajans, and prasad distribution."
+    },
+    "event2": {
+      "title": "Maha Aarti Celebration",
+      "images": ["3.jpg", "4.jpg", "5.jpg"],
+      "description": "Special evening aarti ceremony with devotional songs and lamp offerings. Devotees gathered to seek blessings from Shri Maharaj."
+    },
+    "event3": {
+      "title": "Temple Foundation Day",
+      "images": ["4.jpg", "5.jpg", "1.jpg"],
+      "description": "Celebration of temple foundation day with special prayers, cultural programs, and community feast for all devotees."
     }
   }
 }

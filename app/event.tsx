@@ -1,3 +1,2 @@
-// app/events/[id].tsx
-import EventDetailsScreen from "../screens/EventDetailsScreen";
-export default EventDetailsScreen;
+import EventGalleryScreen from "../screens/EventGalleryScreen";
+export default EventGalleryScreen;
