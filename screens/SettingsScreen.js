@@ -1,15 +1,19 @@
 import { useTranslation } from "react-i18next";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import i18n from "../i18n";
 
 import LanguageCard from "../components/mobile/LanguageCard";
 import ScreenContainer from "../components/mobile/ScreenContainer";
 import SectionHeader from "../components/mobile/SectionHeader";
 
+const LANGUAGE_KEY = "@app_language";
+
 export default function SettingsScreen() {
   const { t } = useTranslation();
   const currentLang = i18n.language;
 
-  const changeLang = (lang) => {
+  const changeLang = async (lang) => {
+    await AsyncStorage.setItem(LANGUAGE_KEY, lang);
     i18n.changeLanguage(lang);
   };
 
