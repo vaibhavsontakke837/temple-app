@@ -1,12 +1,12 @@
 // shared/temples.js
 export const TEMPLES = [
   {
-    id: "pandharpur",
-    i18nKey: "temples.pandharpur",
+    id: "viral",
+    i18nKey: "temples.viral",
   },
   {
-    id: "alandi",
-    i18nKey: "temples.alandi",
+    id: "dongarshelki",
+    i18nKey: "temples.dongarshelki",
   },
   {
     id: "dehu",
