@@ -58,16 +58,18 @@
 
   "temples": {
     "viral": {
-      "name": "विराळ संस्थान",
+      "name": "विराळ देवस्थान",
       "village": "विराळ",
       "address": "मु.विराळ, ता.जळकोट, जि.लातुर, महाराष्ट्र",
-      "contact": "+91 9999 9999"
+      "contact": "+91 9999 9999",
+      "mapurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161221.51556892018!2d76.9560940254065!3d18.680527418243365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfb3b0feeeaaab%3A0x1b9f88519f3a8403!2sShree%20Samartha%20Dhondhutatya%20Temple%20viral!5e1!3m2!1sen!2sin!4v1772447160978!5m2!1sen!2sin"
     },
-    "alandi": {
-      "name": "आळंदी मंदिर",
-      "village": "आळंदी",
-      "address": "आळंदी देवाची, पुणे",
-      "contact": "+९१ ९८८८८ ८८८८८"
+    "dongarshelki": {
+      "name": "डोंगरशेळकी देवस्थान",
+      "village": "डोंगरशेळकी",
+      "address": "श्री  समर्थ  धोंडूतात्या  मंदिर  डोंगरशेळकी , उदगीर  - 413517, महाराष्ट्र",
+      "contact": "+91 9888 8888",
+      "mapurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115057.39800269762!2d77.03868161626733!3d18.542048935203876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfac1c7db71b99%3A0x5323e4572c09be7!2sDhondutatya%20Temple!5e1!3m2!1sen!2sin!4v1772461493630!5m2!1sen!2sin"
     },
     "dehu": {
       "name": "देहू मंदिर",

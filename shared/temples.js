@@ -5,8 +5,8 @@ export const TEMPLES = [
     i18nKey: "temples.viral",
   },
   {
-    id: "alandi",
-    i18nKey: "temples.alandi",
+    id: "dongarshelki",
+    i18nKey: "temples.dongarshelki",
   },
   {
     id: "dehu",
