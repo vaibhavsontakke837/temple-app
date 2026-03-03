@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
-import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function Information() {
   const { t } = useTranslation();
@@ -27,7 +27,11 @@ export default function Information() {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerText}>Maharaj Information</Text>
+        <Image 
+          source={require('../assets/gallery/6.jpg')} 
+          style={styles.maharajImage}
+        />
+        <Text style={styles.headerText}>{t("JivanCharitrayLabel")}</Text>
       </View>
 
       {bhags.map((bhag) => {
@@ -94,10 +98,20 @@ const styles = StyleSheet.create({
   header: {
     backgroundColor: '#ff6600',
     padding: 20,
+    flexDirection: 'row',
     alignItems: 'center',
+    // justify  Content: 'center',
+  },
+  maharajImage: {
+    width: 80,
+    height: 80,
+    borderRadius: 50  ,
+    marginRight: 50 ,
+    borderWidth: 2,
+    borderColor: '#fff',
   },
   headerText: {
-    fontSize: 24,
+    fontSize: 15,
     fontWeight: 'bold',
     color: '#fff',
   },
