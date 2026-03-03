@@ -258,6 +258,8 @@
   "temples": {
     "viral": {
       "name": "Viral Sansthan",
+      "templeName": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Viral",
+      "templeSubtitle": "Spiritual place of peace & devotion",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Viral",
       "village": "Viral",
       "address": "At.Viral, Tq.Jalkot, Dist.Latur, Maharashtra",
@@ -269,6 +271,8 @@
     },
     "dongarshelki": {
       "name": "Dongarshelki Devsthan",
+      "templeName": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Dongarshelki",
+      "templeSubtitle": "Spiritual place of peace & devotion",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Alandi",
       "village": "Alandi",
       "address": "Shri Samarth Dhondutatya Mandir Dongarshelki, Udgir - 413517, Maharashtra",
@@ -277,6 +281,8 @@
     },
     "dehu": {
       "name": "Dehu Temple",
+      "templeName": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Dehu",
+      "templeSubtitle": "Spiritual place of peace & devotion",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Dehu",
       "village": "Dehu",
       "address": "Dehu Road, Pune",
@@ -284,6 +290,8 @@
     },
     "jeur": {
       "name": "Jeur Temple",
+      "templeName": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Jeur",
+      "templeSubtitle": "Spiritual place of peace & devotion",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Jeur",
       "village": "Jeur",
       "address": "Jeur, Solapur",

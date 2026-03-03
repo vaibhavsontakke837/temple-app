@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: "#fff",
     maxWidth: 90,
+    fontWeight: "600",
   },
 
   dropdownList: {
@@ -115,5 +116,6 @@ const styles = StyleSheet.create({
   itemText: {
     fontSize: 12,
     color: "#333",
+    fontWeight: "600",
   },
 });

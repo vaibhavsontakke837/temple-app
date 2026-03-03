@@ -3,9 +3,11 @@ import { useTranslation } from "react-i18next";
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import i18n from "../../i18n";
 import { theme } from "../../styles/theme";
+import { useTemple } from "../../context/TempleContext";
 
 export default function CustomDrawerContent(props) {
   const { t } = useTranslation();
+  const { selectedTempleId } = useTemple();
 
   const switchLanguage = (lang) => {
     i18n.changeLanguage(lang);
@@ -20,20 +22,48 @@ export default function CustomDrawerContent(props) {
           style={styles.maharajImage}
         />
         <View style={styles.headerText}>
-          <Text style={styles.title}>{t("templeName")}</Text>
-          <Text style={styles.subtitle}>{t( "templeSubtitle")}</Text>
+          <Text style={styles.title}>{t(`temples.${selectedTempleId}.templeName`)}</Text>
+          <Text style={styles.subtitle}>{t(`temples.${selectedTempleId}.templeSubtitle`)}</Text>
         </View>
       </View>
 
       {/* Menu */}
       <View style={styles.menu}>
-        <DrawerItem label={t("home")} onPress={() => props.navigation.navigate("Home")} />
-        <DrawerItem label={t("aarti")} onPress={() => props.navigation.navigate("Aarti")} />
-        <DrawerItem label={t("events")} onPress={() => props.navigation.navigate("Event")} />
-        <DrawerItem label={t("information")} onPress={() => props.navigation.navigate("Information")} />
-        <DrawerItem label={t("gallery")} onPress={() => props.navigation.navigate("Gallery")} />
-        <DrawerItem label={t("contact")} onPress={() => props.navigation.navigate("Contact")} />
-        <DrawerItem label={t("settings")} onPress={() => props.navigation.navigate("Settings")} />
+        <DrawerItem 
+          label={t("home")} 
+          onPress={() => props.navigation.navigate("Home")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("aarti")} 
+          onPress={() => props.navigation.navigate("Aarti")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("events")} 
+          onPress={() => props.navigation.navigate("Event")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("information")} 
+          onPress={() => props.navigation.navigate("Information")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("gallery")} 
+          onPress={() => props.navigation.navigate("Gallery")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("contact")} 
+          onPress={() => props.navigation.navigate("Contact")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("settings")} 
+          onPress={() => props.navigation.navigate("Settings")}
+          labelStyle={styles.drawerLabel}
+        />
       </View>
 
       {/* Language Switch */}
@@ -85,6 +115,9 @@ const styles = StyleSheet.create({
   },
   menu: {
     marginTop: theme.spacing.md,
+  },
+  drawerLabel: {
+    fontWeight: "600",
   },
   langSwitch: {
     marginTop: "auto",
