@@ -1,9 +1,9 @@
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
 import { useTranslation } from "react-i18next";
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { useTemple } from "../../context/TempleContext";
 import i18n from "../../i18n";
 import { theme } from "../../styles/theme";
-import { useTemple } from "../../context/TempleContext";
 
 export default function CustomDrawerContent(props) {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ export default function CustomDrawerContent(props) {
   };
 
   return (
-    <DrawerContentScrollView {...props} contentContainerStyle={styles.container}>
+    <DrawerContentScrollView {...props} contentContainerStyle={styles.container} scrollEnabled={false}>
       {/* Header */}
       <View style={styles.header}>
         <Image 
@@ -66,15 +66,14 @@ export default function CustomDrawerContent(props) {
         />
       </View>
 
-      {/* Language Switch */}
-      <View style={styles.langSwitch}>
-        <Pressable onPress={() => switchLanguage("en")}>
-          <Text style={styles.lang}>English</Text>
-        </Pressable>
-        <Text style={styles.separator}>|</Text>
-        <Pressable onPress={() => switchLanguage("mr")}>
-          <Text style={styles.lang}>मराठी</Text>
-        </Pressable>
+      {/* Copyright */}
+      <View style={styles.copyright}>
+        <Text style={styles.copyrightText}>
+          {t("allRightsReserved")} {t("developedBy")}
+        </Text>
+        <Text style={styles.copyrightText}>
+          © {new Date().getFullYear()} All Rights Reserved
+        </Text>
       </View>
     </DrawerContentScrollView>
   );
@@ -86,17 +85,17 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.cream,
   },
   header: {
-    padding: theme.spacing.lg,
+    padding: theme.spacing.md,
     backgroundColor: theme.colors.primary,
     flexDirection: 'row',
     alignItems: 'center',
   },
   maharajImage: {
-    width: 100,
-    height: 100,
-    borderRadius: 30,
-    marginRight: 12,
-    marginLeft: -12,
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    marginRight: 10,
+    marginLeft: -8,
     borderWidth: 2,
     borderColor: theme.colors.white,
   },
@@ -105,34 +104,31 @@ const styles = StyleSheet.create({
   },
   title: {
     color: theme.colors.white,
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: "700",
   },
   subtitle: {
     color: theme.colors.glass,
-    fontSize: 13,
-    marginTop: 4,
+    fontSize: 11,
+    marginTop: 2,
   },
   menu: {
-    marginTop: theme.spacing.md,
+    marginTop: theme.spacing.sm,
+    flex: 1,
   },
   drawerLabel: {
     fontWeight: "600",
   },
-  langSwitch: {
+  copyright: {
     marginTop: "auto",
     padding: theme.spacing.md,
-    flexDirection: "row",
-    justifyContent: "center",
     alignItems: "center",
+    
   },
-  lang: {
-    fontSize: 14,
-    color: theme.colors.maroon,
-    fontWeight: "600",
-  },
-  separator: {
-    marginHorizontal: 10,
-    color: theme.colors.deep,
+  copyrightText: {
+    fontSize: 11,
+    color: theme.colors.textSecondary,
+    textAlign: "center",
+    
   },
 });
