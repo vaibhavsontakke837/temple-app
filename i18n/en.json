@@ -3,12 +3,16 @@
   "templeSubtitle": "Spiritual place of peace & devotion",
 
   "quickAccess": "Quick Access",
+  "home": "Home",
   "about": "About",
   "gallery": "Gallery",
   "audio": "Audio / Video",
   "events": "Events",
   "aarti": "Aarti",
+  "information": "Information",
   "location": "Location",
+  "allRightsReserved": "All rights of this app are reserved by the app developer ",
+  "developedBy": "Vaibhav Baburao Sontakke.",
 
   "language": "Language",
   "english": "English",
@@ -31,25 +35,59 @@
   "templeNameLabel": "Temple Name",
   "templeAddressLabel": "Temple Address",
   "templeContactLabel": "Contact",
+  "presidentContactLabel": "President",
+  "secretaryContactLabel": "Secretary",
+  "contactPersonsLabel": "Contact Persons:",
+  "JivanCharitrayLabel": "Complete Life Biography of Shri Samarth Sadguru Dhondutatya Maharaj",
 
   "eventsData": {
-    "ekadashi": {
-      "date": "05 March 2025",
-      "title": "Ekadashi Abhishek",
-      "desc": "Early morning abhishek and spiritual discourse.",
-      "notifyAt": "2026-01-01T06:00:00"
+    "event1": {
+      "date": "15 March 2026",
+      "title": "Devotional singer - H.B.P. Gurulingappa Zhade, Terdhokikar. ",
+      "desc": "Bhajani Mandal: Karanji, Kunki",
+      "notifyAt": "2026-03-15T08:00:00"
     },
-    "mahaAarti": {
-      "date": "05 March 2025",
-      "title": "Maha Aarti",
-      "desc": "Special evening aarti with bhajan and prasadam.",
-      "notifyAt": "2026-01-01T07:00:00"
+    "event2": {
+      "date": "16 March 2026",
+      "title": "Devotional singer - H.B.P. Swatitai Madhav Dapkekar",
+      "desc": "Bhajani Mandal: Kolnur, Malhipparga",
+      "notifyAt": "2026-03-16T08:00:00"
     },
-    "annualYatra": {
-      "date": "05 March 2025",
-      "title": "Annual Yatra",
-      "desc": "Grand procession and pooja ceremony.",
-      "notifyAt": "2026-01-01T08:00:00"
+    "event3": {
+      "date": "17 March 2026",
+      "title": "Devotional singer - H.B.P. Kashinath Maharaj Mane Phulkalskar, Parbhani (Vinodacharya).",
+      "desc": "Bhajani Mandal: Jalkot, Dhamangaon",
+      "notifyAt": "2026-03-17T08:00:00"
+    },
+    "event4": {
+      "date": "18 March 2026",
+      "title": "Devotional singer - H.B.P. Sagar Maharaj Borate, Nateputekar (Courtesy: Pune Mitra Mandal Group, Viral).",
+      "desc": " Bhajani Mandal: Hawarga, Jagalpur, Jirga",
+      "notifyAt": "2026-03-18T08:00:00"
+    },
+    "event5": {
+      "date": "Devotional singer - 19 March 2026",
+      "title": "H.B.P. Madhukar Maharaj Sayalkar - Gudipadwa, Parbhani. ",
+      "desc": "Bhajani Mandal: Sonwala, Sonwalawadi",
+      "notifyAt": "2026-03-19T08:00:00"
+    },
+    "event6": {
+      "date": "Devotional singer - 20 March 2026",
+      "title": "H.B.P. Sau. Anjalitai Kendre, Udgirkar (Bhagwatacharya). ",
+      "desc": "Bhajani Mandal: Lali, Dhorsangvi, Patoda (Khu.), Tiruka",
+      "notifyAt": "2026-03-20T08:00:00"
+    },
+    "event7": {
+      "date": "Devotional singer - 21 March 2026",
+      "title": "H.B.P. Venkat Maharaj, Dagadwadikar (Vinodacharya).",
+      "desc": " Bhajani Mandal: Patoda (Bu.), Dapka Raja",
+      "notifyAt": "2026-03-21T08:00:00"
+    },
+    "event8": {
+      "date": "Devotional singer - 22 March 2026",
+      "title": "H.B.P. Dnyaneshwar Mauli Maharaj Pathade, Karjatkar (Kalya Che Kirtankar; Courtesy: Pune Mitra Group, Viral).",
+      "desc": " Bhajani Mandal: Kurula, Wanjarwada, Konali",
+      "notifyAt": "2026-03-22T08:00:00"
     },
     "papmochaniEkadashi": {
       "date": "15 March 2026",
@@ -221,15 +259,22 @@
   },
   "temples": {
     "viral": {
-      "name": "Viral Devsthan",
+      "name": "Viral Sansthan",
+      "templeName": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Viral",
+      "templeSubtitle": "Spiritual place of peace & devotion",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Viral",
       "village": "Viral",
       "address": "At.Viral, Tq.Jalkot, Dist.Latur, Maharashtra",
-      "contact": "+91 99999 99999",
+      "presidentName": "Lakshman Eklare",
+      "secretaryName": "Balaji Pillewad",
+      "presidentContact": "9922198206",
+      "secretaryContact": "8308197722",
       "mapurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161221.51556892018!2d76.9560940254065!3d18.680527418243365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfb3b0feeeaaab%3A0x1b9f88519f3a8403!2sShree%20Samartha%20Dhondhutatya%20Temple%20viral!5e1!3m2!1sen!2sin!4v1772447160978!5m2!1sen!2sin"
     },
     "dongarshelki": {
       "name": "Dongarshelki Devsthan",
+      "templeName": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Dongarshelki",
+      "templeSubtitle": "Spiritual place of peace & devotion",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Alandi",
       "village": "Alandi",
       "address": "Shri Samarth Dhondutatya Mandir Dongarshelki, Udgir - 413517, Maharashtra",
@@ -238,6 +283,8 @@
     },
     "dehu": {
       "name": "Dehu Temple",
+      "templeName": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Dehu",
+      "templeSubtitle": "Spiritual place of peace & devotion",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Dehu",
       "village": "Dehu",
       "address": "Dehu Road, Pune",
@@ -245,6 +292,8 @@
     },
     "jeur": {
       "name": "Jeur Temple",
+      "templeName": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Jeur",
+      "templeSubtitle": "Spiritual place of peace & devotion",
       "desc": "Shri Samarth Sadguru Dhondutatya Maharaj Sansthan, Jeur",
       "village": "Jeur",
       "address": "Jeur, Solapur",

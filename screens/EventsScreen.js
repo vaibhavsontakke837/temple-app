@@ -7,7 +7,7 @@ import ScreenContainer from "../components/mobile/ScreenContainer";
 
 export default function EventsScreen() {
   const { t } = useTranslation();
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(4);
 
   const allEvents = Object.values(t("eventsData", { returnObjects: true }));
   
@@ -15,7 +15,7 @@ export default function EventsScreen() {
   const events = allEvents.filter(event => new Date(event.notifyAt) > today);
 
   const loadMore = () => {
-    setVisibleCount(prev => prev + 6);
+    setVisibleCount(prev => prev + 4);
   };
 
   return (

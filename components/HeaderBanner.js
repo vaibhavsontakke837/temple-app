@@ -1,7 +1,7 @@
 import { useTemple } from "@/context/TempleContext";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Dimensions, Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Dimensions, Image, ScrollView, StyleSheet, View } from "react-native";
 import { theme } from "../styles/theme";
 
 const BANNER_IMAGES = [
@@ -63,12 +63,12 @@ export default function HeaderBanner() {
         ))}
       </View>
 
-      <View style={styles.textContainer}>
+      {/* <View style={styles.textContainer}>
         <Text numberOfLines={2} style={styles.title}>
           {t(`temples.${selectedTempleId}.desc`)}
         </Text>
         <Text style={styles.subtitle}>{t("templeSubtitle")}</Text>
-      </View>
+      </View> */}
     </View>
   );
 }
@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
     borderRadius: theme.radii.lg,
     padding: 16,
     marginBottom: theme.spacing.lg,
+    borderRadius: 8,
   },
   slider: {
     marginBottom: 8,
@@ -91,12 +92,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    marginVertical: 8,
+    // marginVertical: 8,
   },
   dot: {
     width: 8,
     height: 8,
-    borderRadius: 4,
+    borderRadius: 8,
     backgroundColor: "rgba(255, 255, 255, 0.5)",
     marginHorizontal: 4,
   },
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.white,
     width: 10,
     height: 10,
-    borderRadius: 5,
+    borderRadius: 8,
   },
   textContainer: {
     marginTop: 8,

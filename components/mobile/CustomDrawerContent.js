@@ -1,46 +1,79 @@
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
 import { useTranslation } from "react-i18next";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { useTemple } from "../../context/TempleContext";
 import i18n from "../../i18n";
 import { theme } from "../../styles/theme";
 
 export default function CustomDrawerContent(props) {
   const { t } = useTranslation();
+  const { selectedTempleId } = useTemple();
 
   const switchLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
 
   return (
-    <DrawerContentScrollView {...props} contentContainerStyle={styles.container}>
+    <DrawerContentScrollView {...props} contentContainerStyle={styles.container} scrollEnabled={false}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.title}>{t("templeName")}</Text>
-        <Text style={styles.subtitle}>{t("templeSubtitle")}</Text>
+        <Image 
+          source={require('../../assets/gallery/6.jpg')} 
+          style={styles.maharajImage}
+        />
+        <View style={styles.headerText}>
+          <Text style={styles.title}>{t(`temples.${selectedTempleId}.templeName`)}</Text>
+          <Text style={styles.subtitle}>{t(`temples.${selectedTempleId}.templeSubtitle`)}</Text>
+        </View>
       </View>
 
       {/* Menu */}
       <View style={styles.menu}>
-        <DrawerItem label={t("home")} onPress={() => props.navigation.navigate("Home")} />
-        <DrawerItem label={t("about")} onPress={() => props.navigation.navigate("About Temple")} />
-        <DrawerItem label={t("gallery")} onPress={() => props.navigation.navigate("Gallery")} />
-        <DrawerItem label={t("audio")} onPress={() => props.navigation.navigate("Audio & Video")} />
-        <DrawerItem label={t("events")} onPress={() => props.navigation.navigate("Events")} />
-        <DrawerItem label={t("aarti")} onPress={() => props.navigation.navigate("Aarti")} />
-        <DrawerItem label={t("donation")} onPress={() => props.navigation.navigate("Donation")} />
-        <DrawerItem label={t("contact")} onPress={() => props.navigation.navigate("Contact")} />
-        <DrawerItem label={t("settings")} onPress={() => props.navigation.navigate("Settings")} />
+        <DrawerItem 
+          label={t("home")} 
+          onPress={() => props.navigation.navigate("Home")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("aarti")} 
+          onPress={() => props.navigation.navigate("Aarti")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("events")} 
+          onPress={() => props.navigation.navigate("Event")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("information")} 
+          onPress={() => props.navigation.navigate("Information")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("gallery")} 
+          onPress={() => props.navigation.navigate("Gallery")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("contact")} 
+          onPress={() => props.navigation.navigate("Contact")}
+          labelStyle={styles.drawerLabel}
+        />
+        <DrawerItem 
+          label={t("settings")} 
+          onPress={() => props.navigation.navigate("Settings")}
+          labelStyle={styles.drawerLabel}
+        />
       </View>
 
-      {/* Language Switch */}
-      <View style={styles.langSwitch}>
-        <Pressable onPress={() => switchLanguage("en")}>
-          <Text style={styles.lang}>English</Text>
-        </Pressable>
-        <Text style={styles.separator}>|</Text>
-        <Pressable onPress={() => switchLanguage("mr")}>
-          <Text style={styles.lang}>मराठी</Text>
-        </Pressable>
+      {/* Copyright */}
+      <View style={styles.copyright}>
+        <Text style={styles.copyrightText}>
+          {t("allRightsReserved")} {t("developedBy")}
+        </Text>
+        <Text style={styles.copyrightText}>
+          © {new Date().getFullYear()} All Rights Reserved
+        </Text>
       </View>
     </DrawerContentScrollView>
   );
@@ -52,36 +85,50 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.cream,
   },
   header: {
-    padding: theme.spacing.lg,
+    padding: theme.spacing.md,
     backgroundColor: theme.colors.primary,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  maharajImage: {
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    marginRight: 10,
+    marginLeft: -8,
+    borderWidth: 2,
+    borderColor: theme.colors.white,
+  },
+  headerText: {
+    flex: 1,
   },
   title: {
     color: theme.colors.white,
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: "700",
   },
   subtitle: {
     color: theme.colors.glass,
-    fontSize: 13,
-    marginTop: 4,
+    fontSize: 11,
+    marginTop: 2,
   },
   menu: {
-    marginTop: theme.spacing.md,
+    marginTop: theme.spacing.sm,
+    flex: 1,
   },
-  langSwitch: {
-    marginTop: "auto",
-    padding: theme.spacing.md,
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  lang: {
-    fontSize: 14,
-    color: theme.colors.maroon,
+  drawerLabel: {
     fontWeight: "600",
   },
-  separator: {
-    marginHorizontal: 10,
-    color: theme.colors.deep,
+  copyright: {
+    marginTop: "auto",
+    padding: theme.spacing.md,
+    alignItems: "center",
+    
+  },
+  copyrightText: {
+    fontSize: 11,
+    color: theme.colors.textSecondary,
+    textAlign: "center",
+    
   },
 });
