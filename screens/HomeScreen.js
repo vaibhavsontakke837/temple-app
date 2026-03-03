@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 // import IconGrid from "../components/mobile/IconGrid";
 // import EventsPreview from "../components/mobile/EventsPreview";
 import HeaderBanner from "../components/HeaderBanner";
-import InformationCard from "../components/mobile/InformationCard";
 import ScreenContainer from "../components/mobile/ScreenContainer";
 import SectionHeader from "../components/mobile/SectionHeader";
 import TimingCard from "../components/mobile/TimingCard";
@@ -31,11 +30,10 @@ export default function HomeScreen() {
       <TimingCard />
 
       <SectionHeader title={t("upcomingEvents")} />
-      {/* <EventDetailsScreen /> */}
       <EventsScreen />
 
-      <SectionHeader title={t("blessing")} />
-      <InformationCard />
+      {/* <SectionHeader title={t("blessing")} /> */}
+      {/* <InformationCard /> */}
     </ScreenContainer>
   );
 }
