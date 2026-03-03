@@ -1,6 +1,6 @@
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
 import { useTranslation } from "react-i18next";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import i18n from "../../i18n";
 import { theme } from "../../styles/theme";
 
@@ -15,19 +15,23 @@ export default function CustomDrawerContent(props) {
     <DrawerContentScrollView {...props} contentContainerStyle={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.title}>{t("templeName")}</Text>
-        <Text style={styles.subtitle}>{t("templeSubtitle")}</Text>
+        <Image 
+          source={require('../../assets/gallery/6.jpg')} 
+          style={styles.maharajImage}
+        />
+        <View style={styles.headerText}>
+          <Text style={styles.title}>{t("templeName")}</Text>
+          <Text style={styles.subtitle}>{t( "templeSubtitle")}</Text>
+        </View>
       </View>
 
       {/* Menu */}
       <View style={styles.menu}>
         <DrawerItem label={t("home")} onPress={() => props.navigation.navigate("Home")} />
-        <DrawerItem label={t("about")} onPress={() => props.navigation.navigate("About Temple")} />
-        <DrawerItem label={t("gallery")} onPress={() => props.navigation.navigate("Gallery")} />
-        <DrawerItem label={t("audio")} onPress={() => props.navigation.navigate("Audio & Video")} />
-        <DrawerItem label={t("events")} onPress={() => props.navigation.navigate("Events")} />
         <DrawerItem label={t("aarti")} onPress={() => props.navigation.navigate("Aarti")} />
-        <DrawerItem label={t("donation")} onPress={() => props.navigation.navigate("Donation")} />
+        <DrawerItem label={t("events")} onPress={() => props.navigation.navigate("Event")} />
+        <DrawerItem label={t("information")} onPress={() => props.navigation.navigate("Information")} />
+        <DrawerItem label={t("gallery")} onPress={() => props.navigation.navigate("Gallery")} />
         <DrawerItem label={t("contact")} onPress={() => props.navigation.navigate("Contact")} />
         <DrawerItem label={t("settings")} onPress={() => props.navigation.navigate("Settings")} />
       </View>
@@ -54,6 +58,20 @@ const styles = StyleSheet.create({
   header: {
     padding: theme.spacing.lg,
     backgroundColor: theme.colors.primary,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  maharajImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 30,
+    marginRight: 12,
+    marginLeft: -12,
+    borderWidth: 2,
+    borderColor: theme.colors.white,
+  },
+  headerText: {
+    flex: 1,
   },
   title: {
     color: theme.colors.white,

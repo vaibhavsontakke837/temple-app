@@ -3,11 +3,13 @@
   "templeSubtitle": "Spiritual place of peace & devotion",
 
   "quickAccess": "Quick Access",
+  "home": "Home",
   "about": "About",
   "gallery": "Gallery",
   "audio": "Audio / Video",
   "events": "Events",
   "aarti": "Aarti",
+  "information": "Information",
   "location": "Location",
 
   "language": "Language",
@@ -34,6 +36,7 @@
   "presidentContactLabel": "President",
   "secretaryContactLabel": "Secretary",
   "contactPersonsLabel": "Contact Persons:",
+  "JivanCharitrayLabel": "Complete Life Biography of Shri Samarth Sadguru Dhondutatya Maharaj",
 
   "eventsData": {
     "event1": {
@@ -261,7 +264,7 @@
       "presidentName": "Lakshman Eklare",
       "secretaryName": "Balaji Pillewad",
       "presidentContact": "9922198206",
-     "secretaryContact": "8308197722",
+      "secretaryContact": "8308197722",
       "mapurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161221.51556892018!2d76.9560940254065!3d18.680527418243365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfb3b0feeeaaab%3A0x1b9f88519f3a8403!2sShree%20Samartha%20Dhondhutatya%20Temple%20viral!5e1!3m2!1sen!2sin!4v1772447160978!5m2!1sen!2sin"
     },
     "dongarshelki": {
