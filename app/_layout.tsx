@@ -1,6 +1,4 @@
-import { Drawer } from "expo-router/drawer";
-import AppHeader from "../components/mobile/AppHeader";
-import CustomDrawerContent from "../components/mobile/CustomDrawerContent";
+import { Slot } from 'expo-router';
 import { LanguageProvider } from "../context/LanguageContext";
 import { TempleProvider } from "../context/TempleContext";
 import { ThemeProvider } from "../context/ThemeContext";
@@ -11,11 +9,7 @@ export default function Layout() {
     <LanguageProvider>
       <ThemeProvider>
         <TempleProvider>
-          <Drawer
-            initialRouteName="Home"
-            drawerContent={(props) => <CustomDrawerContent {...props} />}
-            screenOptions={{ header: () => <AppHeader /> }}
-          />
+          <Slot />
         </TempleProvider>
       </ThemeProvider>
     </LanguageProvider>

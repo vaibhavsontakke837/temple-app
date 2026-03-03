@@ -36,32 +36,32 @@ export default function CustomDrawerContent(props) {
         />
         <DrawerItem 
           label={t("aarti")} 
-          onPress={() => props.navigation.navigate("Aarti")}
+          onPress={() => props.navigation.navigate("aarti")}
           labelStyle={styles.drawerLabel}
         />
         <DrawerItem 
           label={t("events")} 
-          onPress={() => props.navigation.navigate("Event")}
+          onPress={() => props.navigation.navigate("event")}
           labelStyle={styles.drawerLabel}
         />
         <DrawerItem 
           label={t("information")} 
-          onPress={() => props.navigation.navigate("Information")}
+          onPress={() => props.navigation.navigate("information")}
           labelStyle={styles.drawerLabel}
         />
         <DrawerItem 
           label={t("gallery")} 
-          onPress={() => props.navigation.navigate("Gallery")}
+          onPress={() => props.navigation.navigate("gallery")}
           labelStyle={styles.drawerLabel}
         />
         <DrawerItem 
           label={t("contact")} 
-          onPress={() => props.navigation.navigate("Contact")}
+          onPress={() => props.navigation.navigate("contact")}
           labelStyle={styles.drawerLabel}
         />
         <DrawerItem 
           label={t("settings")} 
-          onPress={() => props.navigation.navigate("Settings")}
+          onPress={() => props.navigation.navigate("settings")}
           labelStyle={styles.drawerLabel}
         />
       </View>
