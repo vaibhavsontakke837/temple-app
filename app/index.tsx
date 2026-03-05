@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Redirect } from 'expo-router';
 import { useEffect, useState } from 'react';
+import { ActivityIndicator, View } from 'react-native';
 
 export default function Index() {
   const [hasSeenOnboarding, setHasSeenOnboarding] = useState<boolean | null>(null);
@@ -20,7 +21,11 @@ export default function Index() {
   };
 
   if (hasSeenOnboarding === null) {
-    return null;
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff' }}>
+        <ActivityIndicator size="large" color="#ff6600" />
+      </View>
+    );
   }
 
   return hasSeenOnboarding ? <Redirect href="/(tabs)/Home" /> : <Redirect href="/onboarding" />;
