@@ -2,31 +2,33 @@ import { Ionicons } from '@expo/vector-icons';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useThemeContext } from '../../context/ThemeContext';
 
 export default function Information() {
   const { t } = useTranslation();
+  const { theme } = useThemeContext();
   const [expandedBhag, setExpandedBhag] = useState(null);
   const [expandedSubsection, setExpandedSubsection] = useState(null);
 
   const bhags = ['bhag1', 'bhag2', 'bhag3', 'bhag4', 'bhag5', 'bhag6', 'bhag7', 'bhag8', 'bhag9', 'bhag10'];
 
-  const toggleBhag = (bhag) => {
+  const toggleBhag = (bhag:any) => {
     setExpandedBhag(expandedBhag === bhag ? null : bhag);
     setExpandedSubsection(null);
   };
 
-  const toggleSubsection = (subsection) => {
+  const toggleSubsection = (subsection:any) => {
     setExpandedSubsection(expandedSubsection === subsection ? null : subsection);
   };
 
-  const getSubsections = (bhag) => {
-    const bhagData = t(`Information.${bhag}`, { returnObjects: true });
+  const getSubsections = (bhag: any) => {
+    const bhagData = t(`Information.${bhag}`, { returnObjects: true }) as any;
     return Object.keys(bhagData).filter(key => key !== 'name');
   };
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.header}>
+    <ScrollView style={[styles.container, { backgroundColor: theme.colors.cream }]}>
+      <View style={[styles.header, { backgroundColor: theme.colors.primary }]}>
         <Image 
           source={require('../../assets/gallery/6.jpg')} 
           style={styles.maharajImage}
@@ -40,42 +42,42 @@ export default function Information() {
         const subsections = getSubsections(bhag);
 
         return (
-          <View key={bhag} style={styles.bhagContainer}>
+          <View key={bhag} style={[styles.bhagContainer, { backgroundColor: theme.colors.card }]}>
             <TouchableOpacity
               style={styles.bhagHeader}
               onPress={() => toggleBhag(bhag)}
             >
-              <Text style={styles.bhagTitle}>{bhagName}</Text>
+              <Text style={[styles.bhagTitle, { color: theme.colors.text }]}>{bhagName}</Text>
               <Ionicons
                 name={isExpanded ? 'chevron-up' : 'chevron-down'}
                 size={24}
-                color="#ff6600"
+                color={theme.colors.primary}
               />
             </TouchableOpacity>
 
             {isExpanded && (
-              <View style={styles.subsectionsContainer}>
+              <View style={[styles.subsectionsContainer, { borderTopColor: theme.colors.border }]}>
                 {subsections.map((subsection) => {
-                  const subsectionData = t(`Information.${bhag}.${subsection}`, { returnObjects: true });
+                  const subsectionData = t(`Information.${bhag}.${subsection}`, { returnObjects: true }) as { title: string; desc: string };
                   const isSubExpanded = expandedSubsection === `${bhag}-${subsection}`;
 
                   return (
-                    <View key={subsection} style={styles.subsectionContainer}>
+                    <View key={subsection} style={[styles.subsectionContainer, { borderBottomColor: theme.colors.border }]}>
                       <TouchableOpacity
-                        style={styles.subsectionHeader}
+                        style={[styles.subsectionHeader, { backgroundColor: theme.colors.cream }]}
                         onPress={() => toggleSubsection(`${bhag}-${subsection}`)}
                       >
-                        <Text style={styles.subsectionTitle}>{subsectionData.title}</Text>
+                        <Text style={[styles.subsectionTitle, { color: theme.colors.text }]}>{subsectionData.title}</Text>
                         <Ionicons
                           name={isSubExpanded ? 'remove-circle-outline' : 'add-circle-outline'}
                           size={20}
-                          color="#666"
+                          color={theme.colors.textSecondary}
                         />
                       </TouchableOpacity>
 
                       {isSubExpanded && (
-                        <View style={styles.descriptionContainer}>
-                          <Text style={styles.descriptionText}>{subsectionData.desc}</Text>
+                        <View style={[styles.descriptionContainer, { backgroundColor: theme.colors.card }]}>
+                          <Text style={[styles.descriptionText, { color: theme.colors.textSecondary }]}>{subsectionData.desc}</Text>
                         </View>
                       )}
                     </View>
@@ -93,13 +95,15 @@ export default function Information() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
   },
   header: {
-    backgroundColor: '#ff6600',
     padding: 20,
     flexDirection: 'row',
     alignItems: 'center',
+    borderRadius: 10,
+    marginHorizontal: 16,
+    marginTop: 10,
+    elevation: 3,
   },
   maharajImage: {
     width: 80,
@@ -117,7 +121,6 @@ const styles = StyleSheet.create({
   bhagContainer: {
     marginVertical: 8,
     marginHorizontal: 16,
-    backgroundColor: '#fff',
     borderRadius: 8,
     elevation: 2,
     shadowColor: '#000',
@@ -134,16 +137,13 @@ const styles = StyleSheet.create({
   bhagTitle: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
     flex: 1,
   },
   subsectionsContainer: {
     borderTopWidth: 1,
-    borderTopColor: '#eee',
   },
   subsectionContainer: {
     borderBottomWidth: 1,
-    borderBottomColor: '#f0f0f0',
   },
   subsectionHeader: {
     flexDirection: 'row',
@@ -151,22 +151,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 12,
     paddingLeft: 24,
-    backgroundColor: '#fafafa',
   },
   subsectionTitle: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#555',
     flex: 1,
   },
   descriptionContainer: {
     padding: 16,
     paddingLeft: 24,
-    backgroundColor: '#fff',
   },
   descriptionText: {
     fontSize: 14,
     lineHeight: 22,
-    color: '#666',
   },
 });

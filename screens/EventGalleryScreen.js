@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Animated, Dimensions, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useThemeContext } from '../context/ThemeContext';
 
 const { width } = Dimensions.get('window');
 const IMAGE_WIDTH = width - 64;
@@ -13,6 +14,7 @@ const IMAGE_MAP = {
 };
 
 function AutoCarousel({ images }) {
+  const { theme } = useThemeContext();
   const scrollViewRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -54,7 +56,7 @@ function AutoCarousel({ images }) {
             key={index}
             style={[
               styles.dot,
-              currentIndex === index && styles.activeDot,
+              currentIndex === index && { backgroundColor: theme.colors.primary, width: 10, height: 10 },
             ]}
           />
         ))}
@@ -65,15 +67,16 @@ function AutoCarousel({ images }) {
 
 export default function EventGalleryScreen() {
   const { t } = useTranslation();
+  const { theme } = useThemeContext();
   const eventGallery = t('eventGallery', { returnObjects: true });
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={[styles.container, { backgroundColor: theme.colors.cream }]}>
       {Object.values(eventGallery).map((event, index) => (
-        <View key={index} style={styles.card}>
-          <Text style={styles.title}>{event.title}</Text>
+        <View key={index} style={[styles.card, { backgroundColor: theme.colors.card }]}>
+          <Text style={[styles.title, { color: theme.colors.text }]}>{event.title}</Text>
           <AutoCarousel images={event.images} />
-          <Text style={styles.description}>{event.description}</Text>
+          <Text style={[styles.description, { color: theme.colors.textSecondary }]}>{event.description}</Text>
         </View>
       ))}
     </ScrollView>
@@ -83,10 +86,8 @@ export default function EventGalleryScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
   },
   card: {
-    backgroundColor: '#fff',
     margin: 16,
     borderRadius: 12,
     padding: 16,
@@ -99,7 +100,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#333',
     marginBottom: 12,
   },
   carousel: {
@@ -125,15 +125,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
     marginHorizontal: 4,
   },
-  activeDot: {
-    backgroundColor: '#ff6600',
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-  },
   description: {
     fontSize: 14,
     lineHeight: 20,
-    color: '#666',
   },
 });

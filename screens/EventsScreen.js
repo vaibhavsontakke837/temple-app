@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { useThemeContext } from "../context/ThemeContext";
 
 import EventCard from "../components/mobile/EventCard";
 import ScreenContainer from "../components/mobile/ScreenContainer";
 
 export default function EventsScreen() {
   const { t } = useTranslation();
+  const { theme } = useThemeContext();
   const [visibleCount, setVisibleCount] = useState(4);
 
   const allEvents = Object.values(t("eventsData", { returnObjects: true }));
@@ -31,7 +33,7 @@ export default function EventsScreen() {
 
       {visibleCount < events.length && (
         <View style={styles.loadMoreContainer}>
-          <TouchableOpacity style={styles.loadMoreButton} onPress={loadMore}>
+          <TouchableOpacity style={[styles.loadMoreButton, { backgroundColor: theme.colors.primary }]} onPress={loadMore}>
             <Text style={styles.loadMoreText}>Load More</Text>
           </TouchableOpacity>
         </View>
@@ -46,7 +48,6 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
   loadMoreButton: {
-    backgroundColor: "#ff6600",
     paddingHorizontal: 32,
     paddingVertical: 12,
     borderRadius: 8,

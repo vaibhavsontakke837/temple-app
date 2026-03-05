@@ -1,4 +1,5 @@
 import { useTemple } from "@/context/TempleContext";
+import { useThemeContext } from "@/context/ThemeContext";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Linking, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
@@ -7,38 +8,39 @@ import { WebView } from "react-native-webview";
 export default function ContactScreen() {
   const { selectedTempleId } = useTemple();
   const { t } = useTranslation();
+  const { theme } = useThemeContext();
   const mapURL = t(`temples.${selectedTempleId}.mapurl`);
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.heading}>{t("contact")}</Text>
+    <ScrollView contentContainerStyle={[styles.container, { backgroundColor: theme.colors.cream }]}>
+      <Text style={[styles.heading, { color: theme.colors.text }]}>{t("contact")}</Text>
       
-      <View style={styles.card}>
-        <Text style={styles.label}>{t("templeNameLabel")}:</Text>
-        <Text style={styles.value}>{t(`temples.${selectedTempleId}.name`)}</Text>
+      <View style={[styles.card, { backgroundColor: theme.colors.card }]}>
+        <Text style={[styles.label, { color: theme.colors.textSecondary }]}>{t("templeNameLabel")}:</Text>
+        <Text style={[styles.value, { color: theme.colors.text }]}>{t(`temples.${selectedTempleId}.name`)}</Text>
       </View>
 
-      <View style={styles.card}>
-        <Text style={styles.label}>{t("templeAddressLabel")}:</Text>
-        <Text style={styles.value}>{t(`temples.${selectedTempleId}.address`)}</Text>
+      <View style={[styles.card, { backgroundColor: theme.colors.card }]}>
+        <Text style={[styles.label, { color: theme.colors.textSecondary }]}>{t("templeAddressLabel")}:</Text>
+        <Text style={[styles.value, { color: theme.colors.text }]}>{t(`temples.${selectedTempleId}.address`)}</Text>
       </View>
 
-      <View style={styles.card}>
-        <Text style={styles.sectionTitle}>{t("contactPersonsLabel")}</Text>
+      <View style={[styles.card, { backgroundColor: theme.colors.card }]}>
+        <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>{t("contactPersonsLabel")}</Text>
         
-        <View style={styles.contactPerson}>
-          <Text style={styles.label}>{t("presidentContactLabel")}:</Text>
-          <Text style={styles.name}>{t(`temples.${selectedTempleId}.presidentName`)}</Text>
+        <View style={[styles.contactPerson, { borderBottomColor: theme.colors.border }]}>
+          <Text style={[styles.label, { color: theme.colors.textSecondary }]}>{t("presidentContactLabel")}:</Text>
+          <Text style={[styles.name, { color: theme.colors.text }]}>{t(`temples.${selectedTempleId}.presidentName`)}</Text>
           <TouchableOpacity onPress={() => Linking.openURL(`tel:${t("presidentContact")}`)}>
-            <Text style={styles.phone}>{t(`temples.${selectedTempleId}.presidentContact`)}</Text>
+            <Text style={[styles.phone, { color: theme.colors.primary }]}>{t(`temples.${selectedTempleId}.presidentContact`)}</Text>
           </TouchableOpacity>
         </View>
 
-        <View style={styles.contactPerson}>
-          <Text style={styles.label}>{t("secretaryContactLabel")}:</Text>
-          <Text style={styles.name}>{t(`temples.${selectedTempleId}.secretaryName`)}</Text>
+        <View style={[styles.contactPerson, { borderBottomColor: theme.colors.border }]}>
+          <Text style={[styles.label, { color: theme.colors.textSecondary }]}>{t("secretaryContactLabel")}:</Text>
+          <Text style={[styles.name, { color: theme.colors.text }]}>{t(`temples.${selectedTempleId}.secretaryName`)}</Text>
           <TouchableOpacity onPress={() => Linking.openURL(`tel:${t("secretaryContact")}`)}>
-            <Text style={styles.phone}>{t(`temples.${selectedTempleId}.secretaryContact`)}</Text>
+            <Text style={[styles.phone, { color: theme.colors.primary }]}>{t(`temples.${selectedTempleId}.secretaryContact`)}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -65,10 +67,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "700",
     marginBottom: 16,
-    color: "#333",
   },
   card: {
-    backgroundColor: "#fff",
     padding: 16,
     borderRadius: 8,
     marginBottom: 16,
@@ -81,34 +81,28 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#666",
     marginBottom: 4,
   },
   value: {
     fontSize: 16,
-    color: "#333",
   },
   sectionTitle: {
     fontSize: 18,
     fontWeight: "700",
-    color: "#333",
     marginBottom: 12,
   },
   contactPerson: {
     marginBottom: 16,
     paddingBottom: 16,
     borderBottomWidth: 1,
-    borderBottomColor: "#eee",
   },
   name: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#333",
     marginBottom: 4,
   },
   phone: {
     fontSize: 16,
-    color: "#ff6600",
     textDecorationLine: "underline",
   },
   map: {
