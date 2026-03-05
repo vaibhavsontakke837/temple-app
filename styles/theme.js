@@ -1,13 +1,24 @@
 // styles/theme.js (mobile)
+// Default light theme - use ThemeContext for dynamic theming
 export const theme = {
   colors: {
-    primary: "gray",      // Temple Orange FF6A00
-    maroon:  "#7A1E1E",      // Royal Maroon
-    gold:    "#E4B343",      // Sacred Gold
-    cream:   "#FFF5E7",      // Background
-    deep:    "#4A2C2A",      // Text
-    white:   "#FFFFFF",
-    glass:   "rgba(255,255,255,0.55)",
+    primary: "#FF6B35",
+    secondary: "#F7931E",
+    maroon: "#8B0000",
+    gold: "#FFD700",
+    cream: "#FFF8DC",
+    background: "#FFFFFF",
+    text: "#333333",
+    textSecondary: "#666666",
+    border: "#DDDDDD",
+    card: "#FFFFFF",
+    deep: "#4A2C2A",
+    white: "#FFFFFF",
+    glass: "rgba(255,255,255,0.55)",
+  },
+  fonts: {
+    marathi: "Noto Sans Devanagari",
+    english: "System",
   },
   spacing: { xs: 6, sm: 12, md: 18, lg: 24, xl: 32 },
   radii: { sm: 8, md: 14, lg: 20 },

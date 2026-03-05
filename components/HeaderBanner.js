@@ -1,8 +1,8 @@
 import { useTemple } from "@/context/TempleContext";
+import { useThemeContext } from "@/context/ThemeContext";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Dimensions, Image, ScrollView, StyleSheet, View } from "react-native";
-import { theme } from "../styles/theme";
 
 const BANNER_IMAGES = [
   require("../assets/gallery/1.jpg"),
@@ -14,6 +14,7 @@ export default function HeaderBanner() {
   const { t } = useTranslation();
   const { width } = Dimensions.get("window");
   const { selectedTempleId } = useTemple();
+  const { theme } = useThemeContext();
   
   const scrollViewRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,7 +35,7 @@ export default function HeaderBanner() {
   }, [width]);
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: theme.colors.primary }]}>
       <ScrollView
         ref={scrollViewRef}
         horizontal
@@ -57,7 +58,7 @@ export default function HeaderBanner() {
             key={index}
             style={[
               styles.dot,
-              currentIndex === index && styles.activeDot,
+              currentIndex === index && { backgroundColor: "#fff", width: 10, height: 10 },
             ]}
           />
         ))}
@@ -75,11 +76,9 @@ export default function HeaderBanner() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.colors.primary,
-    borderRadius: theme.radii.lg,
-    padding: 16,
-    marginBottom: theme.spacing.lg,
     borderRadius: 8,
+    padding: 16,
+    marginBottom: 24,
   },
   slider: {
     marginBottom: 8,
@@ -101,24 +100,18 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255, 255, 255, 0.5)",
     marginHorizontal: 4,
   },
-  activeDot: {
-    backgroundColor: theme.colors.white,
-    width: 10,
-    height: 10,
-    borderRadius: 8,
-  },
   textContainer: {
     marginTop: 8,
   },
   title: {
-    fontSize: theme.typography.h1,
-    color: theme.colors.white,
+    fontSize: 22,
+    color: "#fff",
     fontWeight: "700",
   },
   subtitle: {
     marginTop: 6,
-    fontSize: theme.typography.body,
-    color: theme.colors.white,
+    fontSize: 15,
+    color: "#fff",
     opacity: 0.9,
   },
 });

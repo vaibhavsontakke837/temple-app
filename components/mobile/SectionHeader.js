@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
-import { theme } from "../../styles/theme";
+import { useThemeContext } from "../../context/ThemeContext";
 
 export default function SectionHeader({ title, right }) {
+  const { theme } = useThemeContext();
+  
   return (
     <View style={styles.wrap}>
-      <Text style={styles.title}>{title}</Text>
+      <Text style={[styles.title, { color: theme.colors.text }]}>{title}</Text>
       {right ? <View>{right}</View> : null}
     </View>
   );
@@ -13,14 +15,12 @@ export default function SectionHeader({ title, right }) {
 const styles = StyleSheet.create({
   wrap: {
     flexDirection: "row",
-    
     justifyContent: "space-between",
     alignItems: "center",
-    marginVertical: theme.spacing.sm,
+    marginVertical: 12,
   },
   title: {
-    fontSize: theme.typography.h2,
-    color: theme.colors.deep,
+    fontSize: 18,
     fontWeight: "700",
   },
 });

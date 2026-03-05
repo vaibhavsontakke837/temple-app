@@ -1,18 +1,19 @@
 import { useTemple } from "@/context/TempleContext";
+import { useThemeContext } from "@/context/ThemeContext";
 import { DrawerContentScrollView, DrawerItemList } from "@react-navigation/drawer";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, View } from "react-native";
-import { theme } from "../../styles/theme";
 
 export default function CustomDrawer(props) {
   const { t } = useTranslation();
   const { selectedTemple, selectTemple, selectedTempleId } = useTemple();
+  const { theme } = useThemeContext();
   
 
   return (
     <DrawerContentScrollView {...props} contentContainerStyle={styles.container}>
       {/* Header */}
-      <View style={styles.header}>
+      <View style={[styles.header, { backgroundColor: theme.colors.primary }]}>
         <Text style={styles.title}>{t(`temples.${selectedTempleId}.name`)}</Text>
         <Text style={styles.subtitle}>{t("templeSubtitle")}</Text>
       </View>
@@ -23,8 +24,8 @@ export default function CustomDrawer(props) {
       </View>
 
       {/* Footer */}
-      <View style={styles.footer}>
-        <Text style={styles.footerText}>
+      <View style={[styles.footer, { borderTopColor: theme.colors.border }]}>
+        <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>
           © {new Date().getFullYear()} {t("templeName")}
         </Text>
       </View>
@@ -32,39 +33,37 @@ export default function CustomDrawer(props) {
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 0,
   },
   header: {
-    backgroundColor: theme.colors.primary,
-    padding: theme.spacing.lg,
-    paddingTop: theme.spacing.xl,
+    padding: 24,
+    paddingTop: 32,
   },
   title: {
-    fontSize: theme.typography.h1,
-    color: theme.colors.white,
+    fontSize: 22,
+    color: "#fff",
     fontWeight: "700",
   },
   subtitle: {
     marginTop: 4,
-    fontSize: theme.typography.small,
-    color: theme.colors.white,
+    fontSize: 13,
+    color: "#fff",
     opacity: 0.9,
   },
   menu: {
-    paddingTop: theme.spacing.md,
+    paddingTop: 18,
     flex: 1,
   },
   footer: {
-    padding: theme.spacing.md,
+    padding: 18,
     borderTopWidth: 1,
-    borderTopColor: "#eee",
   },
   footerText: {
-    fontSize: theme.typography.small,
-    color: theme.colors.deep,
+    fontSize: 13,
     opacity: 0.6,
     textAlign: "center",
   },

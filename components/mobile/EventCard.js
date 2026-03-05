@@ -1,39 +1,40 @@
 import { StyleSheet, Text, View } from "react-native";
-import { theme } from "../../styles/theme";
+import { useThemeContext } from "../../context/ThemeContext";
 
 export default function EventCard({ date, title, desc }) {
+  const { theme } = useThemeContext();
+  
   return (
-    <View style={styles.card}>
-      <Text style={styles.date}>{date}</Text>
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.desc}>{desc}</Text>
+    <View style={[styles.card, { backgroundColor: theme.colors.card }]}>
+      <Text style={[styles.date, { color: theme.colors.primary }]}>{date}</Text>
+      <Text style={[styles.title, { color: theme.colors.text }]}>{title}</Text>
+      <Text style={[styles.desc, { color: theme.colors.textSecondary }]}>{desc}</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: theme.colors.white,
-    padding: theme.spacing.md,
-    borderRadius: theme.radii.md,
-    marginBottom: theme.spacing.md,
-    ...theme.shadow.soft,
+    padding: 18,
+    borderRadius: 14,
+    marginBottom: 18,
+    elevation: 6,
+    shadowColor: "#000",
+    shadowOpacity: 0.08,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 6 },
   },
   date: {
-    fontSize: theme.typography.small,
-    color: theme.colors.primary,
+    fontSize: 13,
     marginBottom: 4,
     fontWeight: "600",
   },
   title: {
-    fontSize: theme.typography.h2,
-    color: theme.colors.deep,
+    fontSize: 18,
     fontWeight: "600",
   },
   desc: {
-    fontSize: theme.typography.body,
-    color: theme.colors.deep,
-    opacity: 0.75,
+    fontSize: 15,
     marginTop: 6,
     lineHeight: 22,
   },

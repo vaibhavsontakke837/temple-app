@@ -13,7 +13,6 @@ export const ThemeProvider = ({ children }) => {
   }, []);
 
   const toggleTheme = () => {
-    debugger
     setMode(prev => {
       const next = prev === "light" ? "dark" : "light";
       AsyncStorage.setItem("theme", next);
@@ -21,19 +20,37 @@ export const ThemeProvider = ({ children }) => {
     });
   };
 
-  // 👇 dynamic theme values
+  // Dynamic theme values for Hindu temple app
   const theme = useMemo(
     () =>
       mode === "light"
         ? {
-            bg: "#ffffff",
-            text: "#111111",
-            header: "#1976D2",
+            colors: {
+              primary: "#FF6B35",
+              secondary: "#F7931E",
+              maroon: "#8B0000",
+              gold: "#FFD700",
+              cream: "#FFF8DC",
+              background: "#FFFFFF",
+              text: "#333333",
+              textSecondary: "#666666",
+              border: "#DDDDDD",
+              card: "#FFFFFF",
+            },
           }
         : {
-            bg: "#121212",
-            text: "#ffffff",
-            header: "#000000",
+            colors: {
+              primary: "#FF8C5A",
+              secondary: "#FFB347",
+              maroon: "#A52A2A",
+              gold: "#FFD700",
+              cream: "#2C2416",
+              background: "#1A1A1A",
+              text: "#EEEEEE",
+              textSecondary: "#AAAAAA",
+              border: "#444444",
+              card: "#2A2A2A",
+            },
           },
     [mode]
   );
