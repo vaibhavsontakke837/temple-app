@@ -23,6 +23,9 @@ const IMAGE_MAP = {
   "All2023_1.jpeg": require("../assets/gallery/All2023_1.jpeg"),
   "Prize2023_2.jpeg": require("../assets/gallery/Prize2023_2.jpeg"),
   "Dance2023_3.jpeg": require("../assets/gallery/Dance2023_3.jpeg"),
+  "Palkhi2018_1.jpeg": require("../assets/gallery/Palkhi2018_1.jpeg"),
+  "Palkhi2018_2.jpeg": require("../assets/gallery/Palkhi2018_2.jpeg"),
+  "Palkhi2018_3.jpeg": require("../assets/gallery/Palkhi2018_3.jpeg"),
 
   // "5.jpg": require("../assets/gallery/5.jpg"),
 };
