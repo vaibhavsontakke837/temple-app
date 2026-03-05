@@ -33,7 +33,9 @@ export default function Information() {
           source={require('../../assets/gallery/6.jpg')} 
           style={styles.maharajImage}
         />
-        <Text style={styles.headerText}>{t("JivanCharitrayLabel")}</Text>
+        <View style={styles.headerTextContainer}>
+          <Text style={styles.headerText}>{t("JivanCharitrayLabel")}</Text>
+        </View>
       </View>
 
       {bhags.map((bhag) => {
@@ -106,17 +108,22 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   maharajImage: {
-    width: 80,
-    height: 80,
-    borderRadius: 50,
-    marginRight: 50,
+    width: 60,
+    height: 60,
+    borderRadius: 30,
     borderWidth: 2,
     borderColor: '#fff',
   },
+  headerTextContainer: {
+    flex: 1,
+    marginLeft: 15,
+    justifyContent: 'center',
+  },
   headerText: {
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: 'bold',
     color: '#fff',
+    textAlign: 'center',
   },
   bhagContainer: {
     marginVertical: 8,

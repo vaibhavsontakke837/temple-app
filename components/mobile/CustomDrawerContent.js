@@ -98,18 +98,19 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    padding: 12,
+    paddingVertical: 30,
+    paddingHorizontal: 20,
     flexDirection: "row",
     alignItems: "center",
   },
 
   maharajImage: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 70,
+    height: 70,
+    borderRadius: 35,
     borderWidth: 2,
     borderColor: "#fff",
-    marginRight: 10,
+    marginRight: 15,
   },
 
   headerText: {
@@ -118,14 +119,14 @@ const styles = StyleSheet.create({
 
   title: {
     color: "#fff",
-    fontSize: 13,
+    fontSize: 16,
     fontWeight: "700",
   },
 
   subtitle: {
     color: "#fff",
-    fontSize: 10,
-    marginTop: 2,
+    fontSize: 12,
+    marginTop: 5,
     opacity: 0.9,
   },
 

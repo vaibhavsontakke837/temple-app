@@ -6,12 +6,14 @@ import { useNavigation } from "expo-router";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTemple } from "../../context/TempleContext";
 
 export default function AppHeader() {
   const navigation = useNavigation();
   const { t } = useTranslation();
   const { toggleTheme, mode } = useTheme();
+  const insets = useSafeAreaInsets();
 
   const { selectedTemple, selectTemple, selectedTempleId } = useTemple();
 
@@ -20,7 +22,7 @@ export default function AppHeader() {
   if (!selectedTemple) return null;
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { paddingTop: insets.top }]}>
       <View style={styles.left}>
         <Pressable onPress={() => navigation.openDrawer()}>
           <Ionicons name="menu" size={26} color="#fff" />
@@ -64,7 +66,7 @@ export default function AppHeader() {
 
 const styles = StyleSheet.create({
   container: {
-    height: 56,
+    height: 70,
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: theme.colors.primary,
@@ -104,7 +106,7 @@ const styles = StyleSheet.create({
 
   dropdownList: {
     position: "absolute",
-    top: 56,
+    top: 70,
     right: 12,
     width: 180,
     backgroundColor: "#fff",

@@ -35,7 +35,7 @@ export default function HeaderBanner() {
   }, [width]);
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.colors.primary }]}>
+    <View style={styles.container}>
       <ScrollView
         ref={scrollViewRef}
         horizontal
@@ -47,7 +47,7 @@ export default function HeaderBanner() {
           <Image
             key={index}
             source={img}
-            style={[styles.image, { width: width - 32 }]}
+            style={[styles.image, { width }]}
           />
         ))}
       </ScrollView>
@@ -63,35 +63,31 @@ export default function HeaderBanner() {
           />
         ))}
       </View>
-
-      {/* <View style={styles.textContainer}>
-        <Text numberOfLines={2} style={styles.title}>
-          {t(`temples.${selectedTempleId}.desc`)}
-        </Text>
-        <Text style={styles.subtitle}>{t("templeSubtitle")}</Text>
-      </View> */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 24,
+    marginBottom: 16,
+    marginHorizontal: 4,
   },
   slider: {
     marginBottom: 8,
+    borderRadius: 12,
+    overflow: 'hidden',
   },
   image: {
-    height: 180,
-    borderRadius: 8,
+    height: 200,
   },
   pagination: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    // marginVertical: 8,
+    position: "absolute",
+    bottom: 16,
+    left: 0,
+    right: 0,
   },
   dot: {
     width: 8,
