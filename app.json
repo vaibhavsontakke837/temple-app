@@ -19,8 +19,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.templeapp",
-      "newArchEnabled": true
+      "package": "com.anonymous.templeapp"
     },
     "web": {
       "output": "static",
@@ -60,6 +59,7 @@
       "eas": {
         "projectId": "d11274c3-4a7a-4a51-a081-1a1cbf37f593"
       }
-    }
+    },
+    "owner": "sontakke_vaibhav837"
   }
 }

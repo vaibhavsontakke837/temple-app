@@ -11,10 +11,6 @@ expo-env.d.ts
 *.orig.*
 .DS_Store
 
-# Ignore build outputs
-android/build/
-ios/build/
-
-# Keep android/gradle.properties in the build
-!android/gradle.properties
-!android/app/gradle.properties
+# Ignore native directories - let EAS generate them
+android/
+ios/
