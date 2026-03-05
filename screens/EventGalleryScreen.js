@@ -1,16 +1,33 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Animated, Dimensions, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useThemeContext } from '../context/ThemeContext';
+import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+import {
+  Dimensions,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import { useThemeContext } from "../context/ThemeContext";
 
-const { width } = Dimensions.get('window');
+const { width } = Dimensions.get("window");
 const IMAGE_WIDTH = width - 64;
 
 const IMAGE_MAP = {
-  '1.jpg': require('../assets/gallery/1.jpg'),
-  '3.jpg': require('../assets/gallery/3.jpg'),
-  '4.jpg': require('../assets/gallery/4.jpg'),
-  '5.jpg': require('../assets/gallery/5.jpg'),
+  "Yatra2017_1.jpeg": require("../assets/gallery/Yatra2017_1.jpeg"),
+  "Yatra2017_2.jpeg": require("../assets/gallery/Yatra2017_2.jpeg"),
+  "Yatra2017_3.jpeg": require("../assets/gallery/Yatra2017_3.jpeg"),
+  "BloodBanner.jpeg": require("../assets/gallery/BloodBanner.jpeg"),
+  "ViruBlood.jpeg": require("../assets/gallery/ViruBlood.jpeg"),
+  "RajBlood2025_3.jpeg": require("../assets/gallery/RajBlood2025_3.jpeg"),
+  "All2023_1.jpeg": require("../assets/gallery/All2023_1.jpeg"),
+  "Prize2023_2.jpeg": require("../assets/gallery/Prize2023_2.jpeg"),
+  "Dance2023_3.jpeg": require("../assets/gallery/Dance2023_3.jpeg"),
+  "Palkhi2018_1.jpeg": require("../assets/gallery/Palkhi2018_1.jpeg"),
+  "Palkhi2018_2.jpeg": require("../assets/gallery/Palkhi2018_2.jpeg"),
+  "Palkhi2018_3.jpeg": require("../assets/gallery/Palkhi2018_3.jpeg"),
+
+  // "5.jpg": require("../assets/gallery/5.jpg"),
 };
 
 function AutoCarousel({ images }) {
@@ -56,7 +73,11 @@ function AutoCarousel({ images }) {
             key={index}
             style={[
               styles.dot,
-              currentIndex === index && { backgroundColor: theme.colors.primary, width: 10, height: 10 },
+              currentIndex === index && {
+                backgroundColor: theme.colors.primary,
+                width: 10,
+                height: 10,
+              },
             ]}
           />
         ))}
@@ -68,15 +89,26 @@ function AutoCarousel({ images }) {
 export default function EventGalleryScreen() {
   const { t } = useTranslation();
   const { theme } = useThemeContext();
-  const eventGallery = t('eventGallery', { returnObjects: true });
+  const eventGallery = t("eventGallery", { returnObjects: true });
 
   return (
-    <ScrollView style={[styles.container, { backgroundColor: theme.colors.cream }]}>
+    <ScrollView
+      style={[styles.container, { backgroundColor: theme.colors.cream }]}
+    >
       {Object.values(eventGallery).map((event, index) => (
-        <View key={index} style={[styles.card, { backgroundColor: theme.colors.card }]}>
-          <Text style={[styles.title, { color: theme.colors.text }]}>{event.title}</Text>
+        <View
+          key={index}
+          style={[styles.card, { backgroundColor: theme.colors.card }]}
+        >
+          <Text style={[styles.title, { color: theme.colors.text }]}>
+            {event.title}
+          </Text>
           <AutoCarousel images={event.images} />
-          <Text style={[styles.description, { color: theme.colors.textSecondary }]}>{event.description}</Text>
+          <Text
+            style={[styles.description, { color: theme.colors.textSecondary }]}
+          >
+            {event.description}
+          </Text>
         </View>
       ))}
     </ScrollView>
@@ -92,14 +124,14 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     padding: 16,
     elevation: 3,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
   },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 12,
   },
   carousel: {
@@ -112,9 +144,9 @@ const styles = StyleSheet.create({
     marginRight: 0,
   },
   pagination: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     marginTop: 8,
     marginBottom: 12,
   },
@@ -122,7 +154,7 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#ccc',
+    backgroundColor: "#ccc",
     marginHorizontal: 4,
   },
   description: {
