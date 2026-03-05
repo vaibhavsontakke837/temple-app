@@ -65,7 +65,7 @@ export default function CustomDrawerContent(props) {
 
         {/* Menu */}
         <View style={styles.menu}>
-          {menuItem("home", "Home", "home-outline")}
+          {menuItem("home", "home", "home-outline")}
           {menuItem("aarti", "aarti", "flame-outline")}
           {menuItem("events", "event", "calendar-outline")}
           {menuItem("information", "information", "information-circle-outline")}
