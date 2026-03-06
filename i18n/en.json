@@ -11,6 +11,7 @@
   "aarti": "Aarti",
   "information": "Information",
   "location": "Location",
+  "facilities": "Facilities",
   "allRightsReserved": "All rights reserved",
   "developedBy": "Vaibhav Baburao Sontakke.",
 
@@ -31,6 +32,30 @@
   "dailyTimings": "Temple Timings",
   "openTime": "Open Time",
   "closeTime": "Close Time",
+
+  "templeHighlights": "Temple Highlights",
+  "showAll": "Show All",
+  "showLess": "Show Less",
+  "godsCharmatkar": "Gods Chamatkar",
+  "historicalPlaces": "Historical Places",
+
+  "chamatkar1Title": "Sun Stopped at Viral",
+  "chamatkar1Desc": "During a Shraddha ceremony, when the Brahmin was delayed, Maharaj prayed that the sun would not set until the ritual was complete. Miraculously, the sun did not set until after the ceremony and Brahmin meal were finished. All present witnessed this divine power.",
+  "chamatkar2Title": "Healing from Snake Bite",
+  "chamatkar2Desc": "Once Maharaj was bitten by a snake. While people panicked, he remained calm and said the poison would not harm him. After bathing and chanting Gayatri mantra, his body returned to normal, demonstrating his spiritual power and fearlessness.",
+  "chamatkar3Title": "Blessing of Walking to Lame Devotee",
+  "chamatkar3Desc": "A devotee from Kunki village who was lame from birth came for darshan in 1904. When Maharaj placed his hand on the devotee's head and asked him to stand, miraculously the man stood on his own feet. From that day, Maharaj himself could not stand, having transferred his power to the devotee.",
+  "chamatkar4Title": "Water Source at Dongarshelki",
+  "chamatkar4Desc": "When Dongarshelki village faced water scarcity in summer, Maharaj showed the location of a hidden spring and asked them to dig. Following his guidance, abundant water was found, providing permanent water supply to the village.",
+
+  "place1Title": "Ancient Temple Complex",
+  "place1Desc": "A historic temple complex dating back centuries, showcasing traditional architecture and spiritual heritage.",
+  "place2Title": "Sacred Samadhi",
+  "place2Desc": "The holy samadhi of Shri Dhondutatya Maharaj, a place of deep spiritual significance and meditation.",
+  "place3Title": "Heritage Monument",
+  "place3Desc": "Preserved historical structures that tell the story of our rich cultural and religious traditions.",
+  "place4Title": "Pilgrimage Site",
+  "place4Desc": "An important pilgrimage destination attracting devotees from across the region throughout the year.",
 
   "templeNameLabel": "Temple Name",
   "templeAddressLabel": "Temple Address",
@@ -316,5 +341,35 @@
       "images": ["Yatra2017_1.jpeg", "Yatra2017_2.jpeg", "Yatra2017_3.jpeg"],
       "description": "Celebration of temple foundation day with special prayers, cultural programs, and community feast for all devotees."
     }
+  },
+  "facility":{
+  "facilitiesData": {
+    "name": "Gangamata Pathak Mangalkaryalay, Viral",
+    "description": "Our Mangalkaryalaya offers excellent facilities for all your special occasions. Equipped with 24/7 water and electricity supply, separate well-furnished rooms for bride and groom, clean modern toilets, ample parking space, and professional catering services. We ensure your celebrations are memorable and hassle-free.",
+    "address": "Viral, Tq. Jalkot, Dist. Latur, Maharashtra",
+    "capacity": "Seating Capacity: 500 People",
+    "contact": "+91 9922198206",
+    "availableFor": {
+      "title": "Available For",
+      "items": [
+        "Marriage Ceremonies",
+        "Engagement Functions",
+        "Ring Ceremonies",
+        "Birthday Celebrations",
+        "Religious Functions"
+      ]
+    },
+    "facilitiesTitle": "Facilities Available",
+    "facilitiesList": [
+      "Professional Lighting Setup",
+      "Sound System",
+      "Water Supply",
+      "Catering Services",
+      "Parking Space",
+      "Air Conditioned Hall",
+      "Stage Decoration"
+    ]
+  }
   }
 }
+

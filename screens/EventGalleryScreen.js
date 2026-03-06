@@ -17,7 +17,7 @@ const IMAGE_MAP = {
   "Yatra2017_1.jpeg": require("../assets/gallery/Yatra2017_1.jpeg"),
   "Yatra2017_2.jpeg": require("../assets/gallery/Yatra2017_2.jpeg"),
   "Yatra2017_3.jpeg": require("../assets/gallery/Yatra2017_3.jpeg"),
-  "BloodBanner.jpeg": require("../assets/gallery/BloodBanner.jpeg"),
+  "Blood2025_1.jpeg": require("../assets/gallery/Blood2025_1.jpeg"),
   "ViruBlood.jpeg": require("../assets/gallery/ViruBlood.jpeg"),
   "RajBlood2025_3.jpeg": require("../assets/gallery/RajBlood2025_3.jpeg"),
   "All2023_1.jpeg": require("../assets/gallery/All2023_1.jpeg"),

@@ -1,29 +1,23 @@
-import { TEMPLES } from "@/shared/temples";
 import { theme } from "@/styles/theme";
 import { Ionicons } from "@expo/vector-icons";
-import { useTheme } from "@react-navigation/native";
 import { useNavigation } from "expo-router";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTemple } from "../../context/TempleContext";
 
 export default function AppHeader() {
   const navigation = useNavigation();
   const { t } = useTranslation();
-  const { toggleTheme, mode } = useTheme();
   const insets = useSafeAreaInsets();
-
-  const { selectedTemple, selectTemple, selectedTempleId } = useTemple();
-
-  const [open, setOpen] = useState(false);
+  const { selectedTemple, selectedTempleId } = useTemple();
 
   if (!selectedTemple) return null;
 
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
-      <View style={styles.left}>
+     
+      <View style={styles.right}>
         <Pressable onPress={() => navigation.openDrawer()}>
           <Ionicons name="menu" size={26} color="#fff" />
         </Pressable>
@@ -35,31 +29,14 @@ export default function AppHeader() {
         </Text>
       </View>
 
-      <Pressable style={styles.dropdownBtn} onPress={() => setOpen(!open)}>
-        <Text numberOfLines={1} style={styles.dropdownText}>
-          {t(`${selectedTemple.i18nKey}.name`)}
-        </Text>
-        <Ionicons name="chevron-down" size={16} color="#fff" />
-      </Pressable>
+     <View style={styles.left}>
+        <Image
+          source={require("../../assets/gallery/6.jpg")}
+          style={styles.logo}
+        />
+      </View>
 
-      {open && (
-        <View style={styles.dropdownList}>
-          {TEMPLES.map((temple) => (
-            <Pressable
-              key={temple.id}
-              style={{ padding: 12 }}
-              onPress={() => {
-                selectTemple(temple.id);
-                setOpen(false);
-              }}
-            >
-              <Text style={styles.itemText}>
-                {t(`${temple.i18nKey}.name`)}
-              </Text>
-            </Pressable>
-          ))}
-        </View>
-      )}
+      
     </View>
   );
 }
@@ -76,6 +53,15 @@ const styles = StyleSheet.create({
   left: {
     width: 40,
     alignItems: "flex-start",
+    justifyContent: "center",
+  },
+
+  logo: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    borderWidth: 2,
+    borderColor: "#fff",
   },
 
   center: {
@@ -89,6 +75,58 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "#fff",
     textAlign: "center",
+  },
+
+  right: {
+    width: 40,
+    alignItems: "flex-end",
+    justifyContent: "center",
+  },
+
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  modalContent: {
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    padding: 20,
+    width: "80%",
+    maxWidth: 300,
+    elevation: 5,
+  },
+
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    marginBottom: 16,
+    textAlign: "center",
+    color: "#333",
+  },
+
+  languageOption: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: 14,
+    borderRadius: 8,
+    marginBottom: 8,
+    backgroundColor: "#f5f5f5",
+  },
+
+  selectedOption: {
+    backgroundColor: theme.colors.primary + "20",
+    borderWidth: 1,
+    borderColor: theme.colors.primary,
+  },
+
+  languageText: {
+    fontSize: 16,
+    color: "#333",
+    fontWeight: "600",
   },
 
   dropdownBtn: {
