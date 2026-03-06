@@ -25,7 +25,7 @@ export default function CustomDrawerContent(props) {
       icon={({ color, size }) => (
         <Ionicons
           name={icon}
-          size={18}
+          size={22}
           color={currentRoute === route ? theme.colors.primary : theme.colors.text}
         />
       )}
@@ -100,16 +100,16 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    paddingVertical: 30,
+    paddingVertical: 40,
     paddingHorizontal: 20,
     flexDirection: "row",
     alignItems: "center",
   },
 
   maharajImage: {
-    width: 70,
-    height: 70,
-    borderRadius: 35,
+    width: 90,
+    height: 90,
+    borderRadius: 45,
     borderWidth: 2,
     borderColor: "#fff",
     marginRight: 15,
@@ -121,13 +121,13 @@ const styles = StyleSheet.create({
 
   title: {
     color: "#fff",
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "700",
   },
 
   subtitle: {
     color: "#fff",
-    fontSize: 12,
+    fontSize: 14,
     marginTop: 5,
     opacity: 0.9,
   },
@@ -140,11 +140,11 @@ const styles = StyleSheet.create({
   drawerItem: {
     marginVertical: 0,
     paddingVertical: 0,
-    minHeight: 38,
+    minHeight: 48,
   },
 
   drawerLabel: {
-    fontSize: 12,
+    fontSize: 15,
     fontWeight: "600",
     marginLeft: -10,
   },

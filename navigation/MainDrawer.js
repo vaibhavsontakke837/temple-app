@@ -2,6 +2,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { useTranslation } from "react-i18next";
 import { theme } from "../styles/theme";
 
+import AppHeader from "../components/mobile/AppHeader";
 import CustomDrawer from "../components/mobile/CustomDrawer";
 
 import AboutTempleScreen from "../screens/AboutTempleScreen";
@@ -23,6 +24,7 @@ export default function MainDrawer() {
       drawerContent={(props) => <CustomDrawer {...props} />}
       screenOptions={{
         headerShown: true,
+        header: () => <AppHeader />,
         drawerActiveTintColor: theme.colors.primary,
         drawerLabelStyle: {
           fontSize: theme.typography.body,
