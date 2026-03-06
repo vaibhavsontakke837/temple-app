@@ -4,6 +4,7 @@ import HeaderBanner from "../components/HeaderBanner";
 import ScreenContainer from "../components/mobile/ScreenContainer";
 import SectionHeader from "../components/mobile/SectionHeader";
 import TimingCard from "../components/mobile/TimingCard";
+import TempleHighlights from "../components/mobile/TempleHighlights";
 
 export default function HomeScreen() {
   const { t } = useTranslation();
@@ -11,6 +12,8 @@ export default function HomeScreen() {
   return (
     <ScreenContainer>
       <HeaderBanner />
+
+      <TempleHighlights />
 
       <SectionHeader title={t("dailyTimings")} />
       <TimingCard />
