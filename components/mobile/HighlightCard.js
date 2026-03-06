@@ -14,7 +14,7 @@ export default function HighlightCard({ icon, title, onPress }) {
       <View style={[styles.iconContainer, { backgroundColor: theme.colors.primary + "20" }]}>
         <Ionicons name={icon} size={28} color={theme.colors.primary} />
       </View>
-      <Text style={[styles.title, { color: theme.colors.text }]} numberOfLines={2}>
+      <Text style={[styles.title, { color: theme.colors.text }]}>
         {title}
       </Text>
     </TouchableOpacity>

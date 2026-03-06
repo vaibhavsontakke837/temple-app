@@ -2,14 +2,12 @@ import { useTemple } from "@/context/TempleContext";
 import { useThemeContext } from "@/context/ThemeContext";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Linking, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { WebView } from "react-native-webview";
+import { Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function ContactScreen() {
   const { selectedTempleId } = useTemple();
   const { t } = useTranslation();
   const { theme } = useThemeContext();
-  const mapURL = t(`temples.${selectedTempleId}.mapurl`);
 
   return (
     <ScrollView contentContainerStyle={[styles.container, { backgroundColor: theme.colors.cream }]}>
@@ -17,7 +15,7 @@ export default function ContactScreen() {
       
       <View style={[styles.card, { backgroundColor: theme.colors.card }]}>
         <Text style={[styles.label, { color: theme.colors.textSecondary }]}>{t("templeNameLabel")}:</Text>
-        <Text style={[styles.value, { color: theme.colors.text }]}>{t(`temples.${selectedTempleId}.name`)}</Text>
+        <Text style={[styles.value, { color: theme.colors.text }]}>{t(`temples.${selectedTempleId}.templeName`)}</Text>
       </View>
 
       <View style={[styles.card, { backgroundColor: theme.colors.card }]}>
@@ -45,7 +43,7 @@ export default function ContactScreen() {
         </View>
       </View>
 
-      {Platform.OS === "web" ? (
+      {/* {Platform.OS === "web" ? (
         <iframe
           src={mapURL}
           width="100%"
@@ -54,7 +52,7 @@ export default function ContactScreen() {
         />
       ) : (
         <WebView source={{ uri: mapURL }} style={styles.map} />
-      )}
+      )} */}
     </ScrollView>
   );
 }
