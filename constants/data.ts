@@ -1,6 +1,6 @@
 export const banners = [
-    require("../assets/images/banners/banner1.jpg"),
-    require("../assets/images/banners/banner2.jpg")
+    require("../assets/gallery/banners/banner1.webp"),
+    require("../assets/gallery/banners/banner2.jpg")
 ]
 
 export const templeTimings=[
@@ -12,13 +12,13 @@ export const aartiList = [
     {
         id:1,
         title:"Kakda Aarti",
-        audio:require("../assets/audio/1.mp3"),
+        audio:require("../assets/audio/aarti1.mp3"),
         lyrics:"test1"
     },
     {
         id:2,
         title:"Morning Aarti",
-        audio:require("../assets/audio/2.mp3"),
+        audio:require("../assets/audio/aarti1.mp3"),
         lyrics:"test2s"
     }
 ]
@@ -28,6 +28,6 @@ export const events = [
         id:1,
         title:"Akhand Harinam Saptah",
         date:"30 March 2024",
-        image: require("../assets/im ")
+        image: require("../assets/gallery/1.jpg")
     }
 ]
