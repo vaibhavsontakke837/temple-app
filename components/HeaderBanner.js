@@ -5,9 +5,9 @@ import { useTranslation } from "react-i18next";
 import { Dimensions, Image, ScrollView, StyleSheet, View } from "react-native";
 
 const BANNER_IMAGES = [
-  require("../assets/gallery/1.jpg"),
-  require("../assets/gallery/3.jpg"),
-  require("../assets/gallery/4.jpg"),
+  require("../assets/gallery/Murti.jpeg"),
+  require("../assets/gallery/templefront.jpeg"),
+  require("../assets/gallery/templeside.jpeg"),
 ];
 
 export default function HeaderBanner() {
@@ -15,7 +15,7 @@ export default function HeaderBanner() {
   const { width } = Dimensions.get("window");
   const { selectedTempleId } = useTemple();
   const { theme } = useThemeContext();
-  
+
   const scrollViewRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -44,21 +44,21 @@ export default function HeaderBanner() {
         style={styles.slider}
       >
         {BANNER_IMAGES.map((img, index) => (
-          <Image
-            key={index}
-            source={img}
-            style={[styles.image, { width }]}
-          />
+          <Image key={index} source={img} style={[styles.image, { width }]} />
         ))}
       </ScrollView>
-      
+
       <View style={styles.pagination}>
         {BANNER_IMAGES.map((_, index) => (
           <View
             key={index}
             style={[
               styles.dot,
-              currentIndex === index && { backgroundColor: "#fff", width: 10, height: 10 },
+              currentIndex === index && {
+                backgroundColor: "#fff",
+                width: 10,
+                height: 10,
+              },
             ]}
           />
         ))}
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   slider: {
     marginBottom: 8,
     borderRadius: 12,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   image: {
     height: 200,
