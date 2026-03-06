@@ -11,8 +11,8 @@ import mr from "./i18n/mr.json";
       en: { translation: en },
       mr: { translation: mr },
     },
-    lng: Localization.locale?.startsWith("mr") ? "mr" : "en",
-    fallbackLng: "en",      
+    lng: "mr",
+    fallbackLng: "mr",      
     interpolation: { escapeValue: false },
   });
 

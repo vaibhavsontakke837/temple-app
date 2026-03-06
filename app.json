@@ -1,12 +1,17 @@
 {
   "expo": {
-    "name": "temple-app",
+    "name": "धोंडुतात्या प्रसन्ना",
     "slug": "temple-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/gallery/icon.png",
+    "icon": "./assets/gallery/logonew.jpg",
     "scheme": "templeapp",
     "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/gallery/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -23,22 +28,10 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/gallery/favicon.png"
+      "favicon": "./assets/gallery/logonew.jpg"
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/gallery/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
-        }
-      ],
       "expo-localization",
       "expo-web-browser",
       [
@@ -51,8 +44,7 @@
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     },
     "extra": {
       "router": {},

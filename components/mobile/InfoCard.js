@@ -9,7 +9,7 @@ export default function InfoCard({ image, title, description }) {
       <Image source={image} style={styles.image} />
       <View style={styles.content}>
         <Text style={[styles.title, { color: theme.colors.text }]}>{title}</Text>
-        <Text style={[styles.description, { color: theme.colors.text }]} numberOfLines={3}>
+        <Text style={[styles.description, { color: theme.colors.text }]}>
           {description}
         </Text>
       </View>

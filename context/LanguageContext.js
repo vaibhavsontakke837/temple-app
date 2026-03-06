@@ -14,7 +14,7 @@ export const LanguageProvider = ({ children }) => {
     const loadLanguage = async () => {
       try {
         const savedLanguage = await AsyncStorage.getItem(LANGUAGE_KEY);
-        const languageToUse = savedLanguage || (Localization.locale?.startsWith("mr") ? "mr" : "en");
+        const languageToUse = savedLanguage || "mr";
         await i18n.changeLanguage(languageToUse);
       } catch (e) {
         console.warn("Failed to load language", e);

@@ -136,15 +136,44 @@ export default function FacilitiesScreen() {
             </Text>
           </View>
 
-          <TouchableOpacity
-            style={styles.infoRow}
-            onPress={() => Linking.openURL(`tel:${facility.contact}`)}
-          >
-            <Ionicons name="call" size={20} color={theme.colors.primary} />
-            <Text style={[styles.infoText, { color: theme.colors.primary }]}>
-              {facility.contact}
-            </Text>
-          </TouchableOpacity>
+
+ <View style={styles.infoRow}>
+            <Ionicons name="person" size={20} color={theme.colors.primary} />
+            <View style={{ flex: 1, marginLeft: 10 }}>
+              <Text style={[styles.contactName, { color: theme.colors.text }]}>
+                {facility.secretaryName}
+              </Text>
+              <TouchableOpacity 
+                style={styles.phoneRow}
+                onPress={() => Linking.openURL(`tel:${facility.secretaryContact}`)}
+              >
+                {/* <Ionicons name="call" size={16} color={theme.colors.primary} /> */}
+                <Text style={[styles.phoneText, { color: theme.colors.primary }]}>
+                  {facility.secretaryContact}
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+            
+          <View style={styles.infoRow}>
+            {/* <Ionicons name="person" size={20} color={theme.colors.primary} /> */}
+            <View style={{ flex: 1, marginLeft: 10 }}>
+              <Text style={[styles.contactName, { color: theme.colors.text }]}>
+                {facility.contactName}
+              </Text>
+              <TouchableOpacity 
+                style={styles.phoneRow}
+                onPress={() => Linking.openURL(`tel:${facility.presidentContact}`)}
+              >
+                <Ionicons name="call" size={16} color={theme.colors.primary} />
+                <Text style={[styles.phoneText, { color: theme.colors.primary }]}>
+                  {facility.presidentContact}
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+
+         
         </View>
 
         <View style={[styles.section, { borderTopColor: theme.colors.border }]}>
@@ -248,13 +277,27 @@ const styles = StyleSheet.create({
   },
   infoRow: {
     flexDirection: "row",
-    alignItems: "center",
-    marginBottom: 10,
+    alignItems: "flex-start",
+    marginBottom: 12,
   },
   infoText: {
     fontSize: 14,
     marginLeft: 10,
     flex: 1,
+  },
+  contactName: {
+    fontSize: 14,
+    fontWeight: "600",
+    marginBottom: 4,
+  },
+  phoneRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
+  phoneText: {
+    fontSize: 14,
+    marginLeft: 6,
   },
   section: {
     borderTopWidth: 1,

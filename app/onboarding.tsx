@@ -9,30 +9,34 @@ const { width, height } = Dimensions.get('window');
 const ONBOARDING_DATA = [
   {
     id: 1,
-    image: require('../assets/gallery/1.jpg'),
-    title: 'Welcome to Temple App',
-    description: 'Experience divine blessings and spiritual peace',
+    image: require('../assets/gallery/logonew.jpg'),
+    title: 'धोंडुतात्या प्रसन्ना ॲप मध्ये आपले स्वागत आहे',
+    description: 'दैवी आशीर्वाद आणि आध्यात्मिक शांततेचा अनुभव घ्या',
   },
   {
     id: 2,
-    image: require('../assets/gallery/2.jpg'),
-    title: 'Daily Aarti & Events',
-    description: 'Stay updated with temple timings and special events',
+    image: require('../assets/gallery/logonew.jpg'),
+    title: 'हे केवळ अ‍ॅप नाही – ही आपल्या श्रद्धेची आठवण आहे',
+    // description: 'मंदिराच्या वेळा आणि विशेष कार्यक्रमांची माहिती मिळवा',
   },
   {
     id: 3,
-    image: require('../assets/gallery/3.jpg'),
-    title: 'Gallery & Media',
-    description: 'Explore temple photos and devotional content',
+    image: require('../assets/gallery/logonew.jpg'),
+    title: 'हे केवळ माहिती नाही – हा आपल्या भक्तीचा वारसा आहे',
+    // description: 'मंदिराचे फोटो आणि भक्तिमय सामग्री पाहा',
   },
   {
     id: 4,
-    image: require('../assets/gallery/4.jpg'),
-    title: 'Connect with Us',
-    description: 'Get temple information and contact details',
+    image: require('../assets/gallery/logonew.jpg'),
+    title: 'ही केवळ टेक्नॉलॉजी नाही – हा महाराजांचा आशिर्वाद आहे',
+    // description: 'मंदिराची माहिती आणि संपर्क तपशील मिळवा',
   },
+  {
+    id: 6,
+    image: require('../assets/gallery/logonew.jpg'),
+    title: 'भक्ती, श्रद्धा आणि परंपरेचा डिजिटल प्रवास',
+  }
 ];
-
 export default function OnboardingScreen() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const router = useRouter();
@@ -105,12 +109,14 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
     backgroundColor: 'rgba(0,0,0,0.4)',
     justifyContent: 'space-between',
-    paddingTop: 100,
     paddingBottom: 40,
   },
   content: {
+    flex: 1,
     paddingHorizontal: 30,
     alignItems: 'center',
+    justifyContent: 'flex-end',
+    paddingBottom: 60,
   },
   title: {
     fontSize: 32,

@@ -11,8 +11,8 @@ i18n.use(initReactI18next).init({
     en: { translation: en },
     mr: { translation: mr },
   },
-  lng: Localization.locale?.startsWith("mr") ? "mr" : "en",
-  fallbackLng: "en",
+  lng: "mr",
+  fallbackLng: "mr",
   interpolation: { escapeValue: false },
 });
 
