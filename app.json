@@ -55,11 +55,7 @@
       "typedRoutes": true
     },
     "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "d11274c3-4a7a-4a51-a081-1a1cbf37f593"
-      }
-    },
-    "owner": "sontakke_vaibhav837"
+      "router": {}
+    }
   }
 }
