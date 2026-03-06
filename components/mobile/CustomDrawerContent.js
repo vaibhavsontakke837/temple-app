@@ -78,10 +78,11 @@ export default function CustomDrawerContent(props) {
         {/* Footer */}
         <View style={[styles.footer, { paddingBottom: insets.bottom + 5, borderTopColor: theme.colors.border }]}>
           <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>
-            © {new Date().getFullYear()} {t("developedBy")}
+            {t("allRightsReserved")}  
           </Text>
+            <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>{t("developedBy")}</Text>
           <Text style={[styles.footerText, { color: theme.colors.textSecondary }]}>
-            {t("allRightsReserved")} 
+            © {new Date().getFullYear()} All Rights Reserved
           </Text>
         </View>
       </SafeAreaView>
