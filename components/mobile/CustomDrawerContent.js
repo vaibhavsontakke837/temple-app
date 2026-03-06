@@ -68,6 +68,7 @@ export default function CustomDrawerContent(props) {
           {menuItem("home", "home", "home-outline")}
           {menuItem("aarti", "aarti", "flame-outline")}
           {menuItem("events", "event", "calendar-outline")}
+          {menuItem("facilities", "facilities", "business-outline")}
           {menuItem("information", "information", "information-circle-outline")}
           {menuItem("gallery", "gallery", "images-outline")}
           {menuItem("contact", "contact", "call-outline")}

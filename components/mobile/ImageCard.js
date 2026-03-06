@@ -42,7 +42,7 @@ export default function ImageCard({ source, style, showDownload = false }) {
 
   return (
     <View style={[styles.card, style]}>
-      <Image source={source} style={styles.image} />
+      <Image source={source} style={styles.image} resizeMode="cover" />
       {showDownload && (
         <TouchableOpacity style={styles.downloadButton} onPress={downloadImage}>
           <Ionicons name="download-outline" size={20} color="#fff" />
@@ -63,7 +63,6 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: 140,
-    resizeMode: "cover",
   },
   downloadButton: {
     position: "absolute",
