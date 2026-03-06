@@ -18,8 +18,8 @@ const IMAGE_WIDTH = width - 64;
 
 const FACILITY_IMAGES = [
   require("../assets/gallery/mangalK1.jpeg"),
-  require("../assets/gallery/3.jpg"),
-  require("../assets/gallery/4.jpg"),
+  require("../assets/gallery/mangalK2.jpeg"),
+  require("../assets/gallery/mangalK1.jpeg"),
 ];
 
 function AutoCarousel({ images }) {

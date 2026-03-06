@@ -3,7 +3,7 @@ export const GODS_CHAMATKAR_DATA = [
     id: 1,
     titleKey: "chamatkar1Title",
     descKey: "chamatkar1Desc",
-    image: require("../assets/gallery/SunChamatkar.png"),
+    image: require("../assets/gallery/sunchamatkar.jpeg"),
   },
   {
     id: 2,
