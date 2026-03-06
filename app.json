@@ -39,7 +39,9 @@
         {
           "icon": "./assets/gallery/icon.png",
           "color": "#ff6600",
-          "sounds": ["./assets/audio/aarti1.mp3"]
+          "sounds": [
+            "./assets/audio/aarti1.mp3"
+          ]
         }
       ],
       [
@@ -55,7 +57,11 @@
       "typedRoutes": true
     },
     "extra": {
-      "router": {}
-    }
+      "router": {},
+      "eas": {
+        "projectId": "4b469e7b-2601-4939-a8f1-f21d72271a60"
+      }
+    },
+    "owner": "v_s"
   }
 }
