@@ -12,6 +12,8 @@ export default function Index() {
 
   const checkOnboarding = async () => {
     try {
+      // Uncomment the line below to reset onboarding (for testing)
+      // await AsyncStorage.removeItem('hasSeenOnboarding');
       const value = await AsyncStorage.getItem('hasSeenOnboarding');
       setHasSeenOnboarding(value === 'true');
     } catch (error) {
@@ -28,5 +30,5 @@ export default function Index() {
     );
   }
 
-  return hasSeenOnboarding ? <Redirect href="/(tabs)/Home" /> : <Redirect href="/onboarding" />;
+  return hasSeenOnboarding ? <Redirect href="/(tabs)/home" /> : <Redirect href="/onboarding" />;
 }

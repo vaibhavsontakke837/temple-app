@@ -5,7 +5,7 @@ import CustomDrawerContent from "../../components/mobile/CustomDrawerContent";
 export default function TabsLayout() {
   return (
     <Drawer
-      initialRouteName="Home"
+      initialRouteName="home"
       drawerContent={(props) => <CustomDrawerContent {...props} />}
       screenOptions={{ header: () => <AppHeader /> }}
     />

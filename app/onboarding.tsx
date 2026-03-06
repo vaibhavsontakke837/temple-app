@@ -42,13 +42,13 @@ export default function OnboardingScreen() {
       setCurrentIndex(currentIndex + 1);
     } else {
       await AsyncStorage.setItem('hasSeenOnboarding', 'true');
-      router.replace('/(tabs)/Home');
+      router.replace('/(tabs)/home');
     }
   };
 
   const handleSkip = async () => {
     await AsyncStorage.setItem('hasSeenOnboarding', 'true');
-    router.replace('/(tabs)/Home');
+    router.replace('/(tabs)/home');
   };
 
   const currentScreen = ONBOARDING_DATA[currentIndex];
