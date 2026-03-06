@@ -19,7 +19,7 @@ export default function AppHeader() {
      
       <View style={styles.right}>
         <Pressable onPress={() => navigation.openDrawer()}>
-          <Ionicons name="menu" size={26} color="#fff" />
+          <Ionicons name="menu" size={32} color="#fff" />
         </Pressable>
       </View>
 
@@ -43,7 +43,7 @@ export default function AppHeader() {
 
 const styles = StyleSheet.create({
   container: {
-    height: 70,
+    height: 90,
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: theme.colors.primary,
@@ -57,9 +57,9 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     borderWidth: 2,
     borderColor: "#fff",
   },
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: 12,
+    fontSize: 16,
     fontWeight: "700",
     color: "#fff",
     textAlign: "center",
