@@ -35,6 +35,16 @@
       "expo-localization",
       "expo-web-browser",
       [
+        "expo-notifications",
+        {
+          "icon": "./assets/gallery/icon.png",
+          "color": "#ff6600",
+          "sounds": [
+            "./assets/audio/aarti1.mp3"
+          ]
+        }
+      ],
+      [
         "expo-font",
         {
           "fonts": [
@@ -49,16 +59,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "d11274c3-4a7a-4a51-a081-1a1cbf37f593"
+        "projectId": "4b469e7b-2601-4939-a8f1-f21d72271a60"
       }
     },
-    "owner": "sontakke_vaibhav837"
-    // "extra": {
-//       "router": {},
-//       "eas": {
-//         "projectId": "d11274c3-4a7a-4a51-a081-1a1cbf37f593"
-//       }
-//     },
-//     "owner": "sontakke_vaibhav837"
+    "owner": "v_s"
   }
 }
