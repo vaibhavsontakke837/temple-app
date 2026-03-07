@@ -153,11 +153,11 @@ export default function FacilitiesScreen() {
              
               <TouchableOpacity 
                 style={styles.phoneRow}
-                onPress={() => Linking.openURL(`tel:${facility.presidentContact}`)}
+                onPress={() => Linking.openURL(`tel:${facility.secretaryContact}`)}
               >
                 <Ionicons name="call" size={16} color={theme.colors.primary} />
                 <Text style={[styles.phoneText, { color: theme.colors.primary }]}>
-                  {facility.presidentContact}
+                  {facility.secretaryContact}
                 </Text>
               </TouchableOpacity>
             </View>

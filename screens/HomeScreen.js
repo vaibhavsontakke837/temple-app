@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
-import EventsList from "../components/mobile/EventsList";
 import HeaderBanner from "../components/HeaderBanner";
+import EventsList from "../components/mobile/EventsList";
 import ScreenContainer from "../components/mobile/ScreenContainer";
 import SectionHeader from "../components/mobile/SectionHeader";
-import TimingCard from "../components/mobile/TimingCard";
 import TempleHighlights from "../components/mobile/TempleHighlights";
+import TimingCard from "../components/mobile/TimingCard";
 
 export default function HomeScreen() {
   const { t } = useTranslation();

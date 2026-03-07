@@ -12,7 +12,7 @@ const { width } = Dimensions.get("window");
 const CARD_WIDTH = (width - theme.spacing.md * 3) / 2;
 
 const GALLERY_DATA = [
-  { id: "1", image: require("../assets/gallery/1.jpg") },
+  // { id: "1", image: require("../assets/gallery/1.jpg") },
   // { id: "2", image: require("../assets/gallery/2.jpg") },
   { id: "6", image: require("../assets/gallery/6.jpg") },
   { id: "8", image: require("../assets/gallery/templefront.jpeg") },
@@ -24,7 +24,7 @@ const GALLERY_DATA = [
   { id: "20", image: require("../assets/gallery/img5.jpeg") },
   { id: "7", image: require("../assets/gallery/Murti.jpeg") },
   { id: "3", image: require("../assets/gallery/3.jpg") },
-  { id: "4", image: require("../assets/gallery/4.jpg") },
+  // { id: "4", image: require("../assets/gallery/4.jpg") },
   { id: "5", image: require("../assets/gallery/5.jpg") },
   { id: "10", image: require("../assets/gallery/SamathiPlace.png") },
   { id: "11", image: require("../assets/gallery/Chalma.png") },

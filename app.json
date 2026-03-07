@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "धोंडुतात्या प्रसन्ना",
+    "name": "श्री समर्थ धोंडुतात्या प्रसन्ना",
     "slug": "temple-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -34,16 +34,6 @@
       "expo-router",
       "expo-localization",
       "expo-web-browser",
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/gallery/icon.png",
-          "color": "#ff6600",
-          "sounds": [
-            "./assets/audio/aarti1.mp3"
-          ]
-        }
-      ],
       [
         "expo-font",
         {
