@@ -25,7 +25,7 @@ const IMAGE_MAP = {
   "Dance2023_3.jpeg": require("../assets/gallery/Dance2023_3.jpeg"),
   "Palkhi2018_1.jpeg": require("../assets/gallery/Palkhi2018_1.jpeg"),
   "Palkhi2018_2.jpeg": require("../assets/gallery/Palkhi2018_2.jpeg"),
-  "Palkhi2018_3.jpeg": require("../assets/gallery/Palkhi2018_3.jpeg"),
+  "Palkhi2018_3.jpg": require("../assets/gallery/Palkhi2018_3.jpg"),
   "indurikar2025_1.jpeg": require("../assets/gallery/indurikar2025_1.jpeg"),
   "indurikar2025_2.jpeg": require("../assets/gallery/indurikar2025_2.jpeg"),
 
