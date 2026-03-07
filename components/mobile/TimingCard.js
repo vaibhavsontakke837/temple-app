@@ -9,7 +9,7 @@ export default function TimingCard() {
   return (
     <View style={[styles.card, { backgroundColor: theme.colors.card }]}>
       <Text style={[styles.row, { color: theme.colors.text }]}>
-        {t("openTime")}: 5:00 AM
+        {t("openTime")}: 6:00 AM
       </Text>
       <Text style={[styles.row, { color: theme.colors.text }]}>
         {t("closeTime")}: 9:00 PM
