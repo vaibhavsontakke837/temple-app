@@ -1,4 +1,3 @@
-// components/mobile/ScreenContainer.js
 import { ScrollView, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useThemeContext } from '../../context/ThemeContext';

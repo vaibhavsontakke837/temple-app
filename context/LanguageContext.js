@@ -1,7 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import * as Localization from "expo-localization";
 import React, { createContext, useContext, useEffect, useState } from "react";
-import i18n from "../i18n";
+import i18n from "../i18n/index";
 
 const LANGUAGE_KEY = "@app_language";
 
@@ -9,12 +8,14 @@ const LanguageContext = createContext(null);
 
 export const LanguageProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
+  const [currentLanguage, setCurrentLanguage] = useState("mr");
 
   useEffect(() => {
     const loadLanguage = async () => {
       try {
         const savedLanguage = await AsyncStorage.getItem(LANGUAGE_KEY);
         const languageToUse = savedLanguage || "mr";
+        setCurrentLanguage(languageToUse);
         await i18n.changeLanguage(languageToUse);
       } catch (e) {
         console.warn("Failed to load language", e);
@@ -28,6 +29,7 @@ export const LanguageProvider = ({ children }) => {
 
   const changeLanguage = async (lang) => {
     try {
+      setCurrentLanguage(lang);
       await AsyncStorage.setItem(LANGUAGE_KEY, lang);
       await i18n.changeLanguage(lang);
     } catch (e) {
@@ -36,7 +38,7 @@ export const LanguageProvider = ({ children }) => {
   };
 
   return (
-    <LanguageContext.Provider value={{ changeLanguage, loading }}>
+    <LanguageContext.Provider value={{ changeLanguage, loading, currentLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

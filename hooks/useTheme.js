@@ -1,10 +1,8 @@
-// hooks/useTheme.js
 import { useThemeContext } from '../context/ThemeContext';
 
 export const useTheme = () => {
   const context = useThemeContext();
   if (!context) {
-    // Fallback to default light theme if context not available
     return {
       theme: {
         colors: {

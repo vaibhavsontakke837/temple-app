@@ -9,31 +9,28 @@ const { width, height } = Dimensions.get('window');
 const ONBOARDING_DATA = [
   {
     id: 1,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'श्री समर्थ धोंडुतात्या प्रसन्ना ॲप मध्ये आपले स्वागत आहे',
     description: 'दैवी आशीर्वाद आणि आध्यात्मिक शांततेचा अनुभव घ्या',
   },
   {
     id: 2,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'हे केवळ अ‍ॅप नाही – ही आपल्या श्रद्धेची आठवण आहे',
-    // description: 'मंदिराच्या वेळा आणि विशेष कार्यक्रमांची माहिती मिळवा',
   },
   {
     id: 3,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'हे केवळ माहिती नाही – हा आपल्या भक्तीचा वारसा आहे',
-    // description: 'मंदिराचे फोटो आणि भक्तिमय सामग्री पाहा',
   },
   {
     id: 4,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'ही केवळ टेक्नॉलॉजी नाही – हा धोंडुतात्या महाराजांचा आशिर्वाद आहे',
-    // description: 'मंदिराची माहिती आणि संपर्क तपशील मिळवा',
   },
   {
     id: 6,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'भक्ती, श्रद्धा आणि परंपरेचा डिजिटल प्रवास',
   }
 ];
@@ -82,11 +79,11 @@ export default function OnboardingScreen() {
 
           <View style={styles.buttons}>
             <Pressable onPress={handleSkip} style={styles.skipBtn}>
-              <Text style={styles.skipText}>Skip</Text>
+              <Text style={styles.skipText}>वगळा</Text>
             </Pressable>
             <Pressable onPress={handleNext} style={styles.nextBtn}>
               <Text style={styles.nextText}>
-                {currentIndex === ONBOARDING_DATA.length - 1 ? 'Get Started' : 'Next'}
+                {currentIndex === ONBOARDING_DATA.length - 1 ? 'सुरुवात करा' : 'पुढे'}
               </Text>
             </Pressable>
           </View>

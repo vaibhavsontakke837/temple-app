@@ -14,6 +14,7 @@ export default function EventsScreen() {
   const allEvents = Object.values(t("eventsData", { returnObjects: true }));
   
   const today = new Date();
+  const todayStr = today.toDateString();
   const events = allEvents.filter(event => new Date(event.notifyAt) > today);
 
   const loadMore = () => {
@@ -22,14 +23,18 @@ export default function EventsScreen() {
 
   return (
     <ScreenContainer>
-      {events.slice(0, visibleCount).map((event, index) => (
-        <EventCard
-          key={index}
-          date={event.date}
-          title={event.title}
-          desc={event.desc}
-        />
-      ))}
+      {events.slice(0, visibleCount).map((event, index) => {
+        const isToday = new Date(event.notifyAt).toDateString() === todayStr;
+        return (
+          <EventCard
+            key={index}
+            date={event.date}
+            title={event.title}
+            desc={event.desc}
+            isTopEvent={isToday}
+          />
+        );
+      })}
 
       {visibleCount < events.length && (
         <View style={styles.loadMoreContainer}>

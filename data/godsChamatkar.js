@@ -1,21 +1,21 @@
 export const GODS_CHAMATKAR_DATA = [
   {
     id: 1,
-    titleKey: "chamatkar1Title",
+    titleKey: "",
     descKey: "chamatkar1Desc",
-    image: require("../assets/gallery/sunchamatkar.jpeg"),
-  },
-  {
-    id: 2,
-    titleKey: "chamatkar2Title",
-    descKey: "chamatkar2Desc",
-    image: require("../assets/gallery/2.jpg"),
+    image: require("../assets/gallery/SunChamatkar.png"),
   },
   {
     id: 3,
     titleKey: "chamatkar3Title",
     descKey: "chamatkar3Desc",
     image: require("../assets/gallery/3.jpg"),
+  },
+  {
+    id: 2,
+    titleKey: "chamatkar2Title",
+    descKey: "chamatkar2Desc",
+    image: require("../assets/gallery/5.jpg"),
   },
   {
     id: 4,

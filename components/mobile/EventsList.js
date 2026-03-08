@@ -10,23 +10,34 @@ export default function EventsList({ limit = 3 }) {
   const [visibleCount, setVisibleCount] = useState(limit);
 
   const allEvents = Object.values(t("eventsData", { returnObjects: true }));
+  const allEventsTop = Object.values(t("eventsDatatop", { returnObjects: true }));
   const today = new Date();
-  const events = allEvents.filter(event => new Date(event.notifyAt) > today);
-
+  today.setHours(0, 0, 0, 0);
+  const filteredEvents = allEvents.filter(event => new Date(event.notifyAt) >= today);
+  const events = [...allEventsTop, ...filteredEvents];
   const loadMore = () => {
     setVisibleCount(prev => prev + 4);
   };
 
   return (
     <View>
-      {events.slice(0, visibleCount).map((event, index) => (
-        <EventCard
-          key={index}
-          date={event.date}
-          title={event.title}
-          desc={event.desc}
-        />
-      ))}
+      {events.slice(0, visibleCount).map((event, index) => {
+        const isTopEvent = index < allEventsTop.length;
+        const isAdvertisement = index < allEventsTop.length;
+        const eventDate = new Date(event.notifyAt);
+        eventDate.setHours(0, 0, 0, 0);
+        const isToday = eventDate.getTime() === today.getTime();
+        return (
+          <EventCard
+            key={index}
+            date={event.date}
+            title={event.title}
+            desc={event.desc}
+            isTopEvent={isTopEvent || isToday}
+            isAdvertisement={isAdvertisement}
+          />
+        );
+      })}
 
       {visibleCount < events.length && (
         <View style={styles.loadMoreContainer}>

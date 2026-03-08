@@ -5,6 +5,7 @@ import { ActivityIndicator, View } from 'react-native';
 
 export default function Index() {
   const [hasSeenOnboarding, setHasSeenOnboarding] = useState<boolean | null>(null);
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
     checkOnboarding();
@@ -12,17 +13,17 @@ export default function Index() {
 
   const checkOnboarding = async () => {
     try {
-      // Uncomment the line below to reset onboarding (for testing)
-      // await AsyncStorage.removeItem('hasSeenOnboarding');
       const value = await AsyncStorage.getItem('hasSeenOnboarding');
       setHasSeenOnboarding(value === 'true');
     } catch (error) {
       console.error('Error checking onboarding:', error);
       setHasSeenOnboarding(false);
+    } finally {
+      setIsReady(true);
     }
   };
 
-  if (hasSeenOnboarding === null) {
+  if (!isReady || hasSeenOnboarding === null) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff' }}>
         <ActivityIndicator size="large" color="#ff6600" />

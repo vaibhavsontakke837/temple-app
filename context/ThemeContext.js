@@ -20,7 +20,6 @@ export const ThemeProvider = ({ children }) => {
     });
   };
 
-  // Dynamic theme values for Hindu temple app
   const theme = useMemo(
     () =>
       mode === "light"
