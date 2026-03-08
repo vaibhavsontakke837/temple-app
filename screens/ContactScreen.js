@@ -42,17 +42,6 @@ export default function ContactScreen() {
           </TouchableOpacity>
         </View>
       </View>
-
-      {/* {Platform.OS === "web" ? (
-        <iframe
-          src={mapURL}
-          width="100%"
-          height="400"
-          style={{ border: 0, marginTop: 16, borderRadius: 8 }}
-        />
-      ) : (
-        <WebView source={{ uri: mapURL }} style={styles.map} />
-      )} */}
     </ScrollView>
   );
 }
@@ -102,10 +91,5 @@ const styles = StyleSheet.create({
   phone: {
     fontSize: 16,
     textDecorationLine: "underline",
-  },
-  map: {
-    height: 400,
-    marginTop: 16,
-    borderRadius: 8,
   },
 });

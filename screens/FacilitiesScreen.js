@@ -148,7 +148,6 @@ export default function FacilitiesScreen() {
           </View>
             
           <View style={styles.infoRow}>
-            {/* <Ionicons name="person" size={20} color={theme.colors.primary} /> */}
             <View style={{ flex: 1, marginLeft: 10 }}>
              
               <TouchableOpacity 

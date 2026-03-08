@@ -28,8 +28,6 @@ const IMAGE_MAP = {
   "Palkhi2018_3.jpg": require("../assets/gallery/Palkhi2018_3.jpg"),
   "indurikar2025_1.jpg": require("../assets/gallery/indurikar2025_1.jpg"),
   "indurikar2025_2.jpg": require("../assets/gallery/indurikar2025_2.jpg"),
-
-  // "5.jpg": require("../assets/gallery/5.jpg"),
 };
 
 function AutoCarousel({ images }) {

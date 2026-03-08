@@ -10,7 +10,6 @@ export const TempleProvider = ({ children }) => {
   const [selectedTempleId, setSelectedTempleId] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Load persisted temple
   useEffect(() => {
     const loadTemple = async () => {
       try {
@@ -30,7 +29,6 @@ export const TempleProvider = ({ children }) => {
     loadTemple();
   }, []);
 
-  // Persist temple
   const selectTemple = async (id) => {
     setSelectedTempleId(id);
     try {

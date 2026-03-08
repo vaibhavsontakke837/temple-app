@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import { Dimensions, Image, ScrollView, StyleSheet, View } from "react-native";
 
 const BANNER_IMAGES = [
-  // require("../assets/gallery/6.jpg"),
   require("../assets/gallery/templeside.jpeg"),
   require("../assets/gallery/templefront.jpeg"),
 ];

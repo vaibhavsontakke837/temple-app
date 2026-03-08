@@ -23,41 +23,32 @@ export default function AppHeader() {
 
   return (
     <View style={styles.container}>
-      {/* Left: Hamburger */}
       <Pressable onPress={() => navigation.openDrawer()}>
         <Ionicons name="menu" size={26} color="#fff" />
       </Pressable>
 
       <Text numberOfLines={2} style={[styles.title, { color: theme.text }]}> {t("templeName")} </Text>
 
-      {/* Center: Temple Dropdown */}
-      {/* <View style={styles.center}> */}
-        <Pressable style={styles.dropdown}>
-          <Text numberOfLines={1} style={styles.title}>
-            {t(`${selectedTemple.i18nKey}.name`)}
-          </Text>
-          <Ionicons name="chevron-down" size={16} color="#fff" />
-        </Pressable>
+      <Pressable style={styles.dropdown}>
+        <Text numberOfLines={1} style={styles.title}>
+          {t(`${selectedTemple.i18nKey}.name`)}
+        </Text>
+        <Ionicons name="chevron-down" size={16} color="#fff" />
+      </Pressable>
 
-
-        {/* Dropdown list */}
-        <View style={styles.dropdownList}>
-          {TEMPLES.map((temple) => (
-            <Pressable
-              key={temple.id}
-              style={styles.dropdownItem}
-              onPress={() => selectTemple(temple.id)}
-            >
-              <Text style={styles.dropdownText}>
-                {t(`${temple.i18nKey}.name`)}
-              </Text>
-            </Pressable>
-          ))}
-        </View>
-      {/* </View> */}
-      
-
-      {/* Right: Dark / Light (COMMENTED FOR NOW) */}
+      <View style={styles.dropdownList}>
+        {TEMPLES.map((temple) => (
+          <Pressable
+            key={temple.id}
+            style={styles.dropdownItem}
+            onPress={() => selectTemple(temple.id)}
+          >
+            <Text style={styles.dropdownText}>
+              {t(`${temple.i18nKey}.name`)}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
       
       <Pressable onPress={toggleTheme}>
         <Ionicons
@@ -66,10 +57,6 @@ export default function AppHeader() {
           color="#fff"
         />
       </Pressable>
-     
-
-      {/* Placeholder to keep center aligned */}
-      {/* <View style={{ width: 26 }} /> */}
     </View>
   );
 }
@@ -91,7 +78,6 @@ const styles = StyleSheet.create({
   dropdown: {
     flexDirection: "row",
     alignItems: "center",
-    // gap: 4,
     left:-90
   },
 

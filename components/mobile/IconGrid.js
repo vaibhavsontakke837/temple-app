@@ -1,5 +1,3 @@
-// components/mobile/IconGrid.js
-import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { theme } from '../../styles/theme';
 

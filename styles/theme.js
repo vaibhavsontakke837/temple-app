@@ -1,5 +1,3 @@
-// styles/theme.js (mobile)
-// Default light theme - use ThemeContext for dynamic theming
 export const theme = {
   colors: {
     primary: "#FF6B35",

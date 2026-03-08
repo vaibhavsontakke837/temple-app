@@ -17,19 +17,16 @@ const ONBOARDING_DATA = [
     id: 2,
     image: require('../assets/gallery/logonew.jpg'),
     title: 'हे केवळ अ‍ॅप नाही – ही आपल्या श्रद्धेची आठवण आहे',
-    // description: 'मंदिराच्या वेळा आणि विशेष कार्यक्रमांची माहिती मिळवा',
   },
   {
     id: 3,
     image: require('../assets/gallery/logonew.jpg'),
     title: 'हे केवळ माहिती नाही – हा आपल्या भक्तीचा वारसा आहे',
-    // description: 'मंदिराचे फोटो आणि भक्तिमय सामग्री पाहा',
   },
   {
     id: 4,
     image: require('../assets/gallery/logonew.jpg'),
     title: 'ही केवळ टेक्नॉलॉजी नाही – हा धोंडुतात्या महाराजांचा आशिर्वाद आहे',
-    // description: 'मंदिराची माहिती आणि संपर्क तपशील मिळवा',
   },
   {
     id: 6,
