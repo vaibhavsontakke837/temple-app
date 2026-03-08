@@ -45,8 +45,10 @@
   "chamatkar2Desc": "Once Maharaj was bitten by a snake. While people panicked, he remained calm and said the poison would not harm him. After bathing and chanting Gayatri mantra, his body returned to normal, demonstrating his spiritual power and fearlessness.",
   "chamatkar3Title": "Blessing of Walking to Lame Devotee",
   "chamatkar3Desc": "A devotee from Kunki village who was lame from birth came for darshan in 1904. When Maharaj placed his hand on the devotee's head and asked him to stand, miraculously the man stood on his own feet. From that day, Maharaj himself could not stand, having transferred his power to the devotee.",
-  "chamatkar4Title": "Water Source at Dongarshelki",
-  "chamatkar4Desc": "When Dongarshelki village faced water scarcity in summer, Maharaj showed the location of a hidden spring and asked them to dig. Following his guidance, abundant water was found, providing permanent water supply to the village.",
+  "chamatkar5Title": "And... Chalma filled with ghee",
+  "chamatkar5Desc": "At Viral, Dhondutatya Maharaj established a Datta temple which still stands for devotees today. Since the establishment of the temple, they used to celebrate Datta Jayanti with great devotion. For Datta Jayanti, people from five kos around were invited by Tatya Maharaj. On this occasion, bhajans, discourses and kirtans were organized. Bhajani mandals, kirtankars and devoted devotees from many villages used to come to Viral. On that day, an atmosphere like Pandharpur yatra was created in Viral village. Devotees used to enter Viral chanting Hari and Datta. Tatya Maharaj had asked his devotees to arrange for ghee-poli mahaprasad. After the Datta Jayanti celebration ended, queues started forming in the field near Maruti temple. The crowd of devotees was increasing and mahaprasad distribution was continuing. Just then a devotee came running and told Maharaj that the ghee was finished. He said that many more devotees were coming for prasad. Maharaj calmly asked some devotees to take pots and go to the chalma. Then Tatya Maharaj sat on a plank and went into meditation. As soon as the devotees dipped the pots in water, miracle - they were filled with ghee and that ghee was used for mahaprasad. Even today, that chalma in Viral stands as a witness to this miracle.",
+  "chamatkar6Title": "And... the sculptor brought the idol fifteen days earlier",
+  "chamatkar6Desc": "In 1991, it was decided to install the idol of Shri Samarth Dhondutatya Maharaj at Viral. A grand mahayajna was to be organized in the village for this occasion. Some people from Viral went to Jaipur and gave work to a sculptor to make the idol. Meanwhile, devotees from Viral along with Kunki, Jirga, Dhamangaon, Wanjarwada, Kolnur, Dongarshelki and Dhorsangvi started preparing for the mahayajna. The day of mahayajna was approaching. The sculptor had agreed to bring the idol two to five days before the mahayajna. But one night Dhondutatya Maharaj appeared in the sculptor's dream and said, 'Finish the work quickly, I want to go to the village.' Initially the sculptor ignored it thinking it was a dream. But Maharaj kept appearing in his dreams again and again. Then the sculptor realized the miracle of Maharaj. Without telling anyone, he made the idol and brought it to Viral 10 to 12 days earlier than scheduled. When the idol arrived in Viral before the deadline, the villagers were amazed. The sculptor told everyone about Tatya Maharaj's miracle. When the idol reached Kunki, the villagers stopped it there and welcomed it. Bhajani mandals singing bhajans and married women carrying water pots brought the idol joyfully into the village. Then a mahayajna was performed at Viral and the idol of Dhondutatya Maharaj was consecrated.",
 
   "place1Title": "Ancient Temple Complex",
   "place1Desc": "A historic temple complex dating back centuries, showcasing traditional architecture and spiritual heritage.",
@@ -54,8 +56,12 @@
   "place2Desc": "The holy samadhi of Shri Dhondutatya Maharaj, a place of deep spiritual significance and meditation.",
   "place3Title": "Heritage Monument",
   "place3Desc": "Preserved historical structures that tell the story of our rich cultural and religious traditions.",
-  "place4Title": "Pilgrimage Site",
-  "place4Desc": "An important pilgrimage destination attracting devotees from across the region throughout the year.",
+  "place4Title": "Datta Temple",
+  "place4Desc": "The Datta idol in the Datta temple established by Shri Samarth Dhondutatya Maharaj. This temple is the main center of faith and devotion for devotees. The atmosphere in the temple is very peaceful and sacred, so many devotees come here for meditation and prayer. Devotees get spiritual satisfaction when they have darshan of the Datta idol. Various religious rituals and festivals are celebrated with great devotion in the temple. Therefore this temple is considered an important religious place in the area.",
+  "place5Title": "Chalma",
+  "place5Desc": "This is the sacred water source from the time of Shri Samarth Dhondutatya Maharaj for drinking water. Even today it is located at the same place and abundant water is available in it. Earlier this was the main water source for saints, devotees and villagers coming to the monastery. This place has historical and spiritual significance. Many devotees still visit this water with reverence considering it sacred. Therefore this source is not just a water source but a place that preserves the memory of tradition.",
+  "place6Title": "Pilgrimage Site",
+  "place6Desc": "An important pilgrimage destination attracting devotees from across the region throughout the year. Various religious programs, festivals and kirtans are organized here. Devotees come here with great faith to have darshan and receive blessings. The atmosphere of this place is filled with devotion, faith and spiritual energy. Pilgrims find peace of mind and satisfaction by coming here. Therefore this place is known as a sacred and famous pilgrimage site in the entire region.",
 
   "templeNameLabel": "Temple Name",
   "templeAddressLabel": "Temple Address",
@@ -63,7 +69,18 @@
   "presidentContactLabel": "President",
   "secretaryContactLabel": "Secretary",
   "contactPersonsLabel": "Contact Persons:",
-  "JivanCharitrayLabel": "Complete Life Biography of Shri Samarth Sadguru Dhondutatya Maharaj",
+  "JivanCharitrayLabel": "The Complete Life Biography of Shri Samarth Sadguru Dhondutatya Maharaj",
+  "presidentContact": "9922198206",
+  "secretaryContact": "8308197722",
+  "eventsDatatop": {
+    "event1": {
+      "date": "02 April 2027",
+      "title": "Devotional singer - H.B.P. Indurikar Maharaj",
+      "desc": "Bhajani Mandal: Karanji, Kunki, Viral",
+      "notifyAt": "2027-04-02T08:00:00"
+    }
+  },
+  "loadMore": "Load More",
 
   "eventsData": {
     "event1": {
@@ -325,51 +342,361 @@
       "contact": "+91 96666 66666"
     }
   },
-  "eventGallery": {
-    "event1": {
-      "title": "Annual Yatra 2024",
-      "images": ["1.jpg", "3.jpg", "4.jpg"],
-      "description": "Grand procession with thousands of devotees participating in the annual yatra. The event featured traditional music, bhajans, and prasad distribution."
+  "Information": {
+     "bhag1": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 1",
+      "janm": {
+        "title": "1. Birth",
+        "desc": "Shri Samarth Dhondutatya Maharaj was born in the year 1830 (Shaka 1752) in the sacred village of Loha in Kandhar taluka. His father was Ambadas Maharaj and his mother was Smt. Gangabai (also known as Sakhubai after marriage). Tatya Maharaj belonged to the Yajurvedi Brahmin tradition. Their Vedic branch was Madhyandin and their gotra was Bharadwaj. Ambadas Maharaj served as a priest at the ancient Mahadev temple in Old Loha. Therefore, from childhood itself Tatya Maharaj grew up in an environment filled with worship, religious rituals, and devotion to God. According to the teachings of saints, being born in such a pure and devotional family naturally awakened spiritual brilliance in Tatya Maharaj from a very young age. Their family had been devoted to spirituality for generations, and thus he was born into a deeply pious and cultured household."
+      },
+      "kulParampara": {
+        "title": "2. Family Lineage",
+        "desc": "Shri Samarth Dhondutatya Maharaj was born to Ambadas Maharaj Pathak and Smt. Gangabai. They had two sons – Ram Maharaj and Dhondu Maharaj. Dhondu Maharaj observed lifelong strict celibacy, therefore he had no descendants. However, the spiritual lineage continued through Ram Maharaj.",
+        "genealogy": "Ram Maharaj had two sons – Balkrishna Maharaj and Ganpati Maharaj. Balkrishna Maharaj had a son named Shriram Maharaj. Shriram Maharaj had four sons – Kisan Maharaj, Nagnath Maharaj, Shankar Maharaj, and Dilip Maharaj.",
+        "quote": "“When virtuous sons and daughters are born in a noble family, even God feels joy.” – Saint Tukaram Maharaj",
+        "note": "In accordance with this saying, Dhondutatya Maharaj, born in such a righteous family, became renowned as a lifelong celibate saint."
+      },
+      "balpan": {
+        "title": "3. Childhood at Viral",
+        "desc": "During childhood, Tatya was very charming, fair-complexioned, and calm by nature. Because of his humble nature, everyone in the village loved him. Rather than playing games, he showed greater interest in religious activities. He regularly visited the Mahadev temple with his father. He loved listening to devotional discourses, kirtans, and Puranic stories. His memory was extraordinary; he could accurately narrate stories he had heard. This ability developed in him a strong interest in learning Sanskrit from an early age.",
+        "quote": "“Without waiting for maturity, even in childhood wisdom sometimes appears fully.” – Saint Dnyaneshwar Maharaj",
+        "meaning": "Some individuals display extraordinary wisdom at a young age — this was also visible in Tatya’s childhood."
+      },
+      "jeevanDisha": {
+        "title": "4. Direction in Life",
+        "desc": "During that period, due to the Nizam rule, schools were not easily available in villages. However, since Tatya was born in a Brahmin family, he received education at home. From his father Ambadas Maharaj he learned Vedic knowledge and religious values.",
+        "namdevDarshan": "Once Namdev Maharaj Umbarajkar visited Loha. Six-year-old Dhondu Maharaj went with his mother to seek his blessings. Seeing the radiant face of the child, Namdev Maharaj blessed him and predicted that the boy would accomplish great work in the future and illuminate the lives of many people.",
+        "blessing": "He also said that at the age of eight, the child would meet a great Guru who would guide him and help him master all forms of knowledge.",
+        "effect": "After receiving this blessing, Dhondu Maharaj began practicing regular exercise, Surya Namaskar, studies, and devotional discipline. Even as a child, he developed a liking for worship and meditation in solitude.",
+        "quote": "“Spend time in contemplation, live in solitude, bathe in the sacred Ganga, worship God, and circumambulate the Tulsi plant.” – Saint Tukaram Maharaj"
+      },
+      "shriGuruBhet": {
+        "title": "5. Meeting the Guru",
+        "desc": "As time passed, a saint named Sakharam Maharaj from Kashi arrived in New Loha. Eight-year-old Tatya went with his parents to seek his blessings. It is believed that meeting a saint happens only due to the accumulated merits of previous births. The true path of spiritual realization can be discovered only through the grace of saints.",
+        "quote": "“Only when one has accumulated immense merits from millions of births does one attain the company of saints; through their association devotion blossoms.” – Saint Eknath Maharaj"
+      }
     },
-    "event2": {
-      "title": "Maha Aarti Celebration",
-      "images": ["3.jpg", "4.jpg", "5.jpg"],
-      "description": "Special evening aarti ceremony with devotional songs and lamp offerings. Devotees gathered to seek blessings from Shri Maharaj."
+    "bhag2": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 2",
+      "shriGuruSakharam": {
+        "title": "6. Guru Sakharam Maharaj",
+        "desc": "Sakharam Maharaj belonged to the Vajaseneyi branch and Bharadwaj gotra. At a young age he embraced renunciation and began pilgrimages. Later in life he reached Pandharpur, where he realized that true spiritual knowledge cannot be attained without a Sadguru. Therefore he performed rigorous spiritual observances and fasting at the feet of Lord Pandurang, praying for a true Guru. After several days he received a divine vision instructing him to go to Kandhar and meet a saint named Hanumantaraya. Following this guidance, he received the Mahavakya initiation from his Guru and attained spiritual fulfillment.",
+        "lohaArrival": "Later he settled in Loha, where a self-manifested idol of Lord Vitthal had appeared, making the place spiritually significant. Living in the Vitthal temple, he began teaching Vedic knowledge. His personality reflected intense renunciation. Once, after being criticized for wearing expensive garments, he renounced all luxurious clothing and adopted a simple lifestyle, maintaining lifelong celibacy. He also regularly undertook the Ashadhi and Kartiki pilgrimages to Pandharpur.",
+        "jataIncident": "In his old age, the weight of his matted hair became difficult to bear. He prayed to Lord Pandurang, and by divine grace his heavy matted locks were symbolically offered at the Lord’s feet. Witnessing this miraculous event left people astonished. Such a powerful Guru blessing Dhondutatya Maharaj was indeed his great fortune."
+      },
+
+      "moujibandhan": {
+        "title": "7. Sacred Thread Ceremony",
+        "desc": "At the age of eight, in the presence of Sakharam Maharaj, Tatya underwent the sacred thread ceremony (Upanayan). By wearing the sacred thread he formally accepted the vow of Brahmacharya. His Guru adorned him with a Rudraksha mala and initiated him with sacred mantras. Under the Guru’s guidance he studied the Vedas for seven years and mastered many scriptures in a short period."
+      },
+
+      "fatherDemise": {
+        "title": "8. Father’s Demise",
+        "desc": "While Tatya was deeply engaged in studies and spiritual practice, his father passed away unexpectedly in 1845. At that time Tatya was only fifteen years old. This incident strengthened his sense of responsibility and determination."
+      },
+
+      "viralgaon": {
+        "title": "9. Arrival at Viral Village",
+        "desc": "Gangabai’s brother, Bapurao Maharaj, brought Tatya and his mother to Viral village. As he had no children, he adopted Tatya. Living under his uncle’s guidance, Tatya cultivated discipline, humility, and a spirit of service. With the blessings of family members, his reputation continued to grow."
+      },
+
+      "naishthikBrahmacharya": {
+        "title": "10. Lifelong Celibacy",
+        "desc": "When Tatya reached youth, discussions about his marriage began according to social customs. However, Tatya firmly declared that he would remain a lifelong celibate. Instead of worldly life, he chose the path of spiritual pursuit. Due to this firm resolve, he became widely known as a Naishthik Brahmachari."
+      },
+
+      "tarunya": {
+        "title": "11. Youth",
+        "desc": "During his youth he embraced discipline, spiritual practice, and devotion to God. Daily exercise, Surya Namaskar, yogic postures, and chanting of the Gayatri mantra became part of his routine. Through self-control and pure conduct he set an ideal example for society. His life was as pure as the sacred river Ganga, and through his actions he inspired spiritual awareness in people."
+      }
     },
-    "event3": {
-      "title": "Annual Yatra 2017",
-      "images": ["Yatra2017_1.jpeg", "Yatra2017_2.jpeg", "Yatra2017_3.jpeg"],
-      "description": "Celebration of temple foundation day with special prayers, cultural programs, and community feast for all devotees."
+    "bhag3": {
+    "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 3",
+
+    "bhakti": {
+      "title": "12. Tatya's Devotion",
+      "desc": "The central focus of Shri Tatya’s life was devotion to God. Association with saints, daily worship, observing Ekadashi fasts, celebrating religious festivals, listening to spiritual discourses and kirtans, and singing the virtues of the Lord were the practices through which he nurtured his devotion. His faith was pure and unbroken. Just as a lamp illuminates the path in darkness, devotion illuminates the path of life. Because of this constant devotion, Tatya’s personality became radiant and spiritually powerful. As Saint Eknath Maharaj described devotion to God as the highest joy of life, similarly devotion itself was the true wealth in Tatya’s life. Because of this spiritual strength, he became worthy of the title 'Samarth'."
+    },
+
+    "upasana": {
+      "title": "13. Tatya’s Spiritual Practice",
+      "desc": "Tatya observed lifelong celibacy and followed a strict daily discipline. Every day he practiced yogic postures, Surya Namaskar, and chanted the Gayatri Mantra. He never consumed food without performing Sandhyavandan in the morning, afternoon, and evening. He especially worshipped the Sun God. With the belief that the Sun is the witness of the entire universe and the source of all activities, he adopted the practice of Sun worship. Through this regular spiritual discipline, he developed extraordinary inner strength and divine radiance."
+    },
+
+    "suryaGatiAvarodh": {
+      "title": "14. Stopping the Movement of the Sun at Viral",
+      "desc": "During a Shraddha ceremony, the Brahmins did not arrive on time, which created fear that the ritual would remain incomplete. According to tradition, the ceremony had to be completed before sunset. Tatya reassured his mother and said that the sun would not set until the ritual was completed. He drew a line near the Tulsi Vrindavan and prayed that the shadow should not cross it. Surprisingly, the sun did not set until the entire ritual and Brahmin meal were completed. After offering his prayers, the sun finally set. Everyone present was astonished, and the incident was considered a remarkable example of saintly spiritual power."
+    },
+
+    "sarpdansh": {
+      "title": "15. Snake Bite on Tatya’s Foot",
+      "desc": "Once Tatya was bitten by a snake. The people around him became frightened, but Tatya remained calm and fearless. He confidently said that the poison would not affect him. After taking a bath, he began chanting the Gayatri Mantra. Gradually his body returned to normal. This incident revealed his immense mental strength and unwavering faith in God. It also showed that saints remain free from worldly attachments such as greed and fear."
+    },
+
+    "matechiKushi": {
+      "title": "16. Blessed Lap of the Mother",
+      "desc": "Tatya’s fame and noble conduct spread everywhere. He was respectfully invited to religious events and ceremonies. Donations and offerings from devotees increased greatly. At the age of twenty-four, he began traveling on horseback to spread religious teachings. Seeing the virtues of her son, his mother Gangabai felt great joy. However, the law of the world is inevitable. In the year 1860 she passed away. At that time Tatya was thirty years old."
+    },
+
+    "denagiVinayog": {
+      "title": "17. Proper Use of Donations",
+      "desc": "Some people questioned the large amount of offerings and donations received from devotees. Tatya explained that as a Vedic Brahmin he needed resources for religious duties such as rituals, pilgrimages, sacred baths during holy periods, and visiting saints. Funds were also used to organize annual Harinam Saptah and food donations on the death anniversary of his father. Following the teachings of Saint Tukaram, he used wealth only for righteous and charitable activities. His explanation satisfied everyone."
+    }
+    },
+      "bhag4": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 4",
+
+      "vaidikAdhikari": {
+        "title": "18. Authority in Vedic Rituals",
+        "desc": "According to the Shastras, a Brahmin is ordained to perform six duties: Yajan, Yaajan, Adhyayan, Adhyapan, Daan, and Pratigraha. Shri Tatya followed these principles and his Swadharma with absolute devotion. Four qualities are considered essential to be an authority in Vedic rituals — the desire to perform the karma, the capability to complete it, scriptural knowledge, and an absence of opposition to the scriptures. Since all these qualities were fully present in Tatya, he became renowned as a proficient and respected authority in Vedic rituals."
+      },
+
+      "pandhariYatra": {
+        "title": "19. Arrival at the Holy Land of Pandhari",
+        "desc": "Upon receiving the news of the passing of his Guru, Sakharam Maharaj, Tatya completed the necessary final rites. He built a Samadhi (memorial shrine) in memory of his Guru. Afterward, he went to Pandharpur, bathed in the Chandrabhaga river, and took the Darshan of Shri Vitthal. At that time, Tatya was fifty-three years old. His Guru's departure created a large void in his life, but he further strengthened his faith at his Guru's feet."
+      },
+
+      "boriDaan": {
+        "title": "20. Grain Service from Bori Village",
+        "desc": "During a meeting at Umbraj, a moneylender from Bori village sought financial assistance for his daughters' weddings. Following the suggestion of Namdev Maharaj, Tatya assisted him. Out of gratitude, that moneylender took the responsibility of providing the necessary grain and expenses for the annual Harinam Saptah and Annadaan (food distribution) held on the death anniversary of Tatya's father. This sequence continued faithfully for many years. Later, by Tatya's command and the readiness of the villagers, this service was concluded."
+      },
+
+      "durvaPooja": {
+        "title": "21. Storing Durva for Worship",
+        "desc": "To ensure that Durva (sacred grass) required for daily worship was available throughout the year, Tatya brought Durva from the fields, made small bundles, and stored them in a cupboard. When a person asked in surprise, he replied that just as people store grain, I store materials for worship. This incident demonstrates his awareness and preparation regarding worship."
+      },
+
+      "mathNirman": {
+        "title": "22. Construction of the Math at Viral",
+        "desc": "He resolved to build a Math (monastery) near the Maruti temple in Viral. After resolving land issues, he prepared a systematic plan. Construction began in the year 1894. Devotees cooperated wholeheartedly — some brought stones, while others provided wood. Within a few years, a large portion of the Math's construction was completed."
+      },
+
+      "vishalVruksha": {
+        "title": "23. The Massive Tree at Viral",
+        "desc": "There was a massive tree on the outskirts of the village. Many superstitions surrounded it, and no one dared to cut it down. Since wood was required for the Math, the villagers requested to use that tree. Tatya gave them courage and stood at the site himself, giving the order to cut the tree. Despite frightening sounds, the tree was felled and its wood was used for the Math. Just as the Gita describes the tree of 'Samsara', spiritual strength is required to cut the tree of attachment and illusion. People began to believe that Tatya, through his spiritual power, had conquered such a tree of ignorance."
+      }
+    },
+      "bhag5": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 5",
+      "jeevantSamadhi": {
+        "title": "24. Resolve for Living Samadhi at Viral",
+        "desc": "Shri Samarth Tatya had long ago firmly decided to take Sanjivan Samadhi (entering a meditative state for final departure while alive). In the courtyard of the Math at Viral, he constructed a small underground chamber to serve as the Samadhi site, with a small door for entry. He intended to install a three-foot-high and one-and-a-half-foot-wide idol of Shri Dattatreya above the Samadhi site. In 1918 (Shaka 1840), the idol was ceremoniously consecrated amidst Vedic rituals, fire sacrifices (Homa-Havan), and the chanting of mantras by Brahmins. All of this was done according to his prior planning."
+      },
+      "suryopasakKiDattopasak": {
+        "title": "25. Worshipper of the Sun or Dattatreya?",
+        "desc": "Tatya regularly performed Sun worship, offered Durva grass to the Sun, and performed Surya Namaskars. Nevertheless, he installed an idol of Shri Dattatreya in the Math instead of the Sun. This was due to the influence of his Guru, Sakharam Maharaj Kashikar. The Guru himself was a devotee of Lord Datta and had also installed a Datta idol. The Rudraksha necklace around Tatya's neck and the sandalwood and holy ash (Vibhuti) marks on his forehead were symbols of his devotion to Lord Datta. In his daily 'Panchayatan' worship, Dattatreya occupied the center, while the Sun, Ganesha, Vitthal, and the Shri Guru were seated around Him. Thus, it is clear that Tatya was a Dattopasak (worshipper of Datta)."
+      },
+      "tumhiItheMarnarNahi": {
+        "title": "26. Lobhaji of Kolnur Village",
+        "desc": "A loyal devotee named Lobhaji from Kolnur village used to serve Tatya. Once, while the Math construction was underway, he told Tatya, 'You are preparing for your Samadhi here, but your final resting place should not be here; you will have to go towards the south.' Later, in the course of time, Tatya took Samadhi at Dongarshelki, located south of Viral. Everyone experienced that the devotee's words had come true."
+      },
+      "dagadSeva": {
+        "title": "27. Fulfilling Desires through the Offering of Stones",
+        "desc": "A gentleman from Wakrad village in Kandhar taluka used to visit Tatya frequently for Darshan. Tatya told him, 'Do not come empty-handed; bring a stone with you.' At that time, the Math construction was in progress. Following the command, the man brought a stone every time. Seeing his devotion, Tatya was pleased. When the man expressed a desire for children, Tatya prescribed a vow of offering water to Lord Maruti daily and performing eleven circumambulations (Pradakshina). Within a short time, a son was born in his house. His wish was fulfilled by Tatya's blessings."
+      },
+      "ashirwadMahima": {
+        "title": "28. The Power of Tatya's Blessings",
+        "desc": "Devotees firmly believed that a word uttered by Tatya never went in vain. Due to his chanting (Japa), penance (Tapa), and concentration, his speech had acquired an extraordinary brilliance. Many experienced that the blessings he gave turned into reality. The belief that a Saint's word is truth was clearly evident through his life."
+      },
+      "santDarshanMahima": {
+        "title": "29. The Greatness of Seeking a Saint's Vision",
+        "desc": "Tatya was constantly immersed in singing the glories of God and spiritual practice. People came from far and wide for his Darshan. However, some acted out of hatred due to his progress. Once, a few people insulted the Saint, but one among them took Tatya's Darshan. Later, during a journey, the two who had insulted him were killed by a lightning strike, while the one who had taken Darshan remained safe. Following this incident, many stopped insulting Saints and embraced service with faith. This event conveys that those who harass Saints fall, while those who approach them with faith are liberated."
+      }
+    },
+    "bhag6": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 6",
+      "bhaktasPaayDile": {
+        "title": "30. Granting Legs to a Devotee in Kunki Village",
+        "desc": "In Kunki village, a short distance from Viral, there was a man who was lame from birth. Although he had legs, he could not walk. He had spent many years of his life dragging himself on his hands. Despite his suffering, he constantly chanted God's name. His faith in Shri Samarth Tatya was firm. In 1904, he came to Viral for Darshan with other devotees. Prostrating at Tatya's feet, he expressed his grief. Compassion arose in Tatya's heart. He placed his hand on the man's head and told him to stand up. To everyone's surprise, the man stood up on his own legs. All those present were stunned. From that day on, Tatya himself could not stand; the feeling grew among devotees that he had gifted his strength to the devotee."
+      },
+      "menyatBasunPravas": {
+        "title": "31. Shri Laxman Maharaj, Mahant of Umbraj Sansthan, at Viral",
+        "desc": "Since the strength in his legs had diminished, it became impossible for Tatya to stand. This news spread everywhere. Shri Laxman Maharaj, the Mahant of Umbraj Sansthan, visited Viral. After a loving conversation, he insisted on sending a 'Mena' (palanquin) for Tatya. Tatya gifted his horses to him in return. Later, a palanquin was prepared and sent. From the age of seventy-four, Tatya began traveling in the palanquin."
+      },
+      "avatarKarya": {
+        "title": "32. The Purpose of His Incarnation",
+        "desc": "Devotees believed that Shri Samarth Dhondutatya Maharaj's incarnation was for the welfare of the people. He spent his life in Japa, meditation, worship, Sun worship, and spiritual endeavors. People received the message of the right path, self-restraint, and devotion through his conduct. Making society aware of sin and virtue and showing the proper way of life was the main objective of his life's work."
+      },
+      "nimantran": {
+        "title": "33. The Invitation from Dongarshelki",
+        "desc": "In the year 1926, a ceremony for the completion of a holy text was organized at Dongarshelki for the month of Shravan. The villagers decided to invite Shri Tatya as the chief guest. Tatya promised to come on the sixth day. On the scheduled day, the villagers came to Viral. Tatya inspired everyone with his radiant, elderly, yet divine personality. He prepared to depart in the palanquin."
+      },
+      "vyasanTyag": {
+        "title": "34. Message of De-addiction",
+        "desc": "Before the palanquin was lifted, Tatya declared that those addicted to vices should not touch it. Hearing this, some stepped back in shame. Some repentantly took an oath to give up their addictions. Seeing their sincerity, Tatya gave them permission. In this way, Tatya gave society the message to stay away from addictions."
+      },
+      "anandAnubhav": {
+        "title": "35. The Joy of a Saint's Company",
+        "desc": "The villagers lifted the palanquin while chanting the name of the Lord and moved southward towards Dongarshelki. Everyone experienced an extraordinary sense of joy in Tatya's company. Abhangs (devotional songs) were sung during the journey. All fatigue vanished. The mind was refreshed by the Saint's vision and company. That day, everyone experienced the true importance of 'Satsang' (the company of the holy)."
+      }
+    },
+    "bhag7": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 7",
+      "ratriAagman": {
+        "title": "36. Arrival at Night",
+        "desc": "Shri Samarth Tatya was carried in the palanquin towards Dongarshelki. The people carrying the palanquin changed in shifts, singing Abhangs throughout the journey. It was the day of Ashwin Shuddha Ashtami. As they walked in the light of the half-moon in the evening, clouds gathered and hid the moonlight. Despite the darkness, the devotees felt no fatigue. Upon reaching near the village, the villagers cheered with joy; after the reading at the Mahadev temple was finished, the Aarti was performed, and everyone took Darshan of Tatya's feet. It was between 11 PM and 12 AM."
+      },
+      "dhanyaDivas": {
+        "title": "37. A Blessed Day and Fortunate Time",
+        "desc": "Tatya's arrival was a moment of great fortune for the village of Dongarshelki. To embrace a Saint's feet is to find peace of mind and the resolution of doubts into happiness and contentment. Shri Tukaram Maharaj says that meeting a Saint is very rare and requires past merits. The merits of the Dongarshelki villagers bore fruit, and they were blessed with Tatya's prolonged company."
+      },
+      "prathamDivas": {
+        "title": "38. The First Day of the Visit",
+        "desc": "Tatya first entered Dongarshelki village on Ashwin Shuddha Ashtami, Shaka 1848, between 11 PM and 12 AM. The next day was the holy festival of Dasara. Because of this auspicious date, Tatya's arrival was very significant. Just as Lord Krishna was born in Gokul at 12 midnight on Ashtami, Tatya's arrival also occurred on the night of Ashtami. The entire village was overjoyed by his arrival, and pure (Sattvic) emotions emerged in everyone's hearts."
+      },
+      "snanPooja": {
+        "title": "39. Rites of Bathing and Worship",
+        "desc": "The next morning, some devotees began to bathe Tatya. Tatya touched the devotees, poured water over himself, and chanted the name of God. Tatya's disciples bathed him, dressed him in ritual silk (Sovala), and seated him in a sacred spot. Worship began, the Gayatri Mantra was chanted, and Surya Namaskar was performed using the 12 main names of the Sun. Sandalwood paste was applied, and holy water (Teertha) was distributed to the devotees. The villagers took Darshan with devotion and experienced Tatya's blessings."
+      },
+      "annPrasad": {
+        "title": "40. Great Devotion through Food",
+        "desc": "After the completion of the reading, preparations for a community meal (Gaon-jevan) began. All devotees participated wholeheartedly in the work. When it seemed the food might not be enough, Tatya simply sprinkled a handful of rice. The food became sufficient, and the meal began. Even after the meal, food remained, which was distributed as 'Shri Samarth Dhondutatya Maharaj's Prasad'. Tatya's memory remained in everyone's hearts."
+      },
+      "chamatkar": {
+        "title": "41. The Reason for Miracles",
+        "desc": "A miracle is never Tatya's permanent intent. He used divine powers when necessary to show the right path to atheists, the arrogant, or those focused only on the external world. Seeing miracles, atheists accept God, the arrogant become humble, and the outward-looking become introspective. Society walks the path of a proper life under the guidance of Saints. People experienced and described many of Tatya's miracles."
+      }
+    },
+    "bhag8": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 8",
+      "navChaitanya": {
+        "title": "42. New Consciousness Descends",
+        "desc": "On the day of Dasara, before the community meal, the final chapter of the 'Pandav Pratap' text was read in the Mahadev temple, the Aarti was performed, and food was offered (Naivedya) as the devotees prepared for worship. A disciple had prepared a special meal for Shri Tatya. In the evening, the Bhajan groups began singing with love, playing cymbals and the mridangam. Hearing the Bhajans, Tatya's joy increased, and he granted the request of the Bhajan groups. Every house was decorated, Rangolis were drawn, new clothes were worn, and festive delicacies were prepared; this joyful atmosphere filled Dongarshelki with a new consciousness."
+      },
+      "mirvanuk": {
+        "title": "43. Tatya's Grand Procession",
+        "desc": "Tatya's procession began through Dongarshelki village. Around 12 noon, musical instruments began to play, and Bhajan groups started singing Abhangs. Shri Tatya was seated in the palanquin, adorned with flower garlands, and the procession began with chants of 'Pundalika Varada Hari Vitthal'. Starting from the Mahadev temple, the procession moved through the main roads, completed a circuit of the town, and returned to the temple, where the Aarti was performed and the palanquin was stopped. Some devotees stayed near Tatya, telling him about the village."
+      },
+      "dongarshelki": {
+        "title": "44. This is Dongarshelki",
+        "desc": "Dongarshelki village is surrounded by hills and plateaus to the south. A small river flows near the village, which has a bend like the Chandrabhaga. In the center of the village is the tall fortress-like residence (Wada) of the Patils, surrounded by the houses of the villagers. The village gate is the main entrance; to the north is a temple of Maruti (the devotee of Rama who shows the path of devotion), and to the south is another temple. The layout of the village is very beautiful."
+      },
+      "shivalay": {
+        "title": "45. Shivalay (The Shiva Temple)",
+        "desc": "The Shiva temple is small but built in the Hemadpanthi style. From the outside, the stones look rough, but on the inside, there is beautiful linear stonework. There is a main entrance to the east, a square window to the south, a wall to the west where a small triangular niche for a lamp can be kept, and a horizontal stone shelf to the north. In the center of the temple is a north-facing Shivalinga, covered with a tin roof. Deities installed by ancestors are in the temple. The construction uses no small stones, only large stones."
+      },
+      "dasaraSannidhya": {
+        "title": "46. Dasara in the Presence of Shri Tatya",
+        "desc": "Around 4 AM on Dasara morning, all the villagers gathered. They took Darshan by offering Tatya 'Apta' leaves and the grain sprouts from the Navratri 'Ghatasthapana'. Married women performed the 'Pancharti' and offered gold ornaments to Tatya to receive his blessings. Young and old alike celebrated the festival with joy by giving him the Dasara 'Tura'. Shri Tukaram says that such an opportunity to meet a Saint is a matter of great fortune."
+      },
+      "punhaBhet": {
+        "title": "47. Return to Viral",
+        "desc": "The next day was Ekadashi. The devotees respectfully sent Tatya back to Viral. The Bhajan groups accompanied him all the way to Viral, playing cymbals and mridangam. Devotees took his Darshan with Tulsi garlands, Gopi-chandan paste, and blessings. Some said, 'Maharaj, please stay in our village,' to which Tatya happily replied, 'I will visit again.' All the villagers returned, and Tatya arrived safely at Viral village."
+      }
+    },
+    "bhag9": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 9",
+      "satkarm": {
+        "title": "48. Shri Tatya's Good Deeds",
+        "desc": "Shri Samarth Dhondutatya Maharaj performed many meritorious deeds in his life. He built temples, installed idols, taught society the right path, steered people away from addictions, and organized Bhajans and Kirtans. In his Math, he immersed devotees in devotion by reading, listening to, and reflecting on the Bhagavat, Ramayana, and Mahabharata. He himself avoided pride, ego, and evil tendencies, keeping his mind and body pure through the chanting of the Gayatri Mantra, Surya Namaskar, and the ritual worship of Shri Dattatreya. He showed that remaining constantly cheerful and performing good deeds is essential for attaining Moksha (liberation)."
+      },
+      "dharmPrachar": {
+        "title": "49. Propagation of Dharma",
+        "desc": "Shri Tatya gave special importance to the propagation of Dharma. He dedicated his life to showing people the right path, explaining religious rituals, and emphasizing the importance of devotion."
+      },
+      "sadhuSanga": {
+        "title": "50. Company of the Holy",
+        "desc": "Tatya always prioritized the company of the holy (Sadhusang). He spent his time interacting with Saints, listening to their experiences, and seeking their guidance."
+      },
+      "guruBhakti": {
+        "title": "51. Devotion to the Guru",
+        "desc": "Tatya's devotion to his Guru was incomparable. He spent his life serving his Guru Sakharam Maharaj, following his words, and receiving Guru-prasad."
+      },
+      "shishyaShiksha": {
+        "title": "52. Education of Disciples",
+        "desc": "Tatya provided religious education to many disciples. He taught them the Vedas, Upanishads, the Gayatri Mantra, and worship rituals. This ensured that religious traditions continued."
+      },
+      "sanatanaDharma": {
+        "title": "53. Sanatana Dharma",
+        "desc": "Tatya protected Sanatana Dharma. He increased the prestige of the religion by following the Puranas, Vedas, and Smritis."
+      },
+      "vishwaBandhu": {
+        "title": "54. Universal Brotherhood",
+        "desc": "Tatya gave the message of universal brotherhood. He encouraged loving all living beings, seeing everyone as equal, and maintaining a spirit of cooperation."
+      },
+      "mokshaMarga": {
+        "title": "55. The Path to Liberation",
+        "desc": "Tatya's path was the path to Moksha. He taught that it is possible to attain the supreme state through the three paths of Devotion (Bhakti), Knowledge (Jnana), and Action (Karma)."
+      }
+    },
+    "bhag10": {
+      "name": "Life Biography of Shri Samarth Dhondutatya Maharaj Part 10",
+      "dongarPani": {
+        "title": "56. Water for Dongarshelki",
+        "desc": "There was a shortage of water in Dongarshelki during the summer. Tatya pointed out the location of a hidden spring and asked the villagers to dig a pit. Following his guidance, they found plenty of water. The villagers began using that water with joy, and the village gained a permanent water source."
+      },
+      "upkar": {
+        "title": "57. Shri Tatya's Favors",
+        "desc": "Through his mercy and grace, Tatya increased the happiness of the villagers' lives. He removed their troubles and provided water. The debt of his favors can never be fully repaid in a human life; however, behaving with integrity while remaining aware of his grace is a human duty."
+      },
+      "punyatithiSaptah": {
+        "title": "58. A Week-long Festival for His Father's Anniversary",
+        "desc": "On the occasion of his father's death anniversary, Tatya organized an uninterrupted week of Harinam (chanting) from Vaishakh Vadya Pratipada to Ashtami. Villagers and devotees from surrounding areas participated enthusiastically. Everyone performed all the tasks of the week with devotion and immersed themselves in Haribhajan."
+      },
+      "darshanMahaprasad": {
+        "title": "59. Tatya's Darshan and Mahaprasad",
+        "desc": "On the seventh day (Saptami), Rangolis were drawn and decorations were made. Under Tatya's guidance, cooking preparations were made on a large scale. Thousands of devotees were overjoyed to receive his Darshan and get Prasad. Through the Saint's blessings, they benefited from a spirit of devotion and purity of heart."
+      }
     }
   },
-  "facility":{
-  "facilitiesData": {
-    "name": "Gangamata Pathak Mangalkaryalay, Viral",
-    "description": "Our Mangalkaryalaya offers excellent facilities for all your special occasions. Equipped with 24/7 water and electricity supply, separate well-furnished rooms for bride and groom, clean modern toilets, ample parking space, and professional catering services. We ensure your celebrations are memorable and hassle-free.",
-    "address": "Viral, Tq. Jalkot, Dist. Latur, Maharashtra",
-    "capacity": "Seating Capacity: 500 People",
-    "contact": "+91 9922198206",
-    "availableFor": {
-      "title": "Available For",
-      "items": [
-        "Marriage Ceremonies",
-        "Engagement Functions",
-        "Ring Ceremonies",
-        "Birthday Celebrations",
-        "Religious Functions"
-      ]
+  "eventGallery": {
+    "event1": {
+      "title": "Annual Yatra 2025",
+      "images": ["indurikar2025_1.jpg", "indurikar2025_2.jpg"],
+      "description": "Kirtan program by Indurikar Maharaj organized during the annual week of Shri Samarth Dhondutatya Maharaj. This kirtan program was attended by many devotees from the village as well as the surrounding areas with great enthusiasm. Indurikar Maharaj presented socially enlightening thoughts in his fluent speech and effective style. The kirtan had a beautiful combination of devotion, humor and life values. The devotees present enjoyed the kirtan wholeheartedly. This program filled the entire area with a devotional atmosphere. The kirtan inspired devotion, values and positive thoughts in everyone's mind."
     },
-    "facilitiesTitle": "Facilities Available",
-    "facilitiesList": [
-      "Professional Lighting Setup",
-      "Sound System",
-      "Water Supply",
-      "Catering Services",
-      "Parking Space",
-      "Air Conditioned Hall",
-      "Stage Decoration"
-    ]
-  }
+    "event2": {
+      "title": "Blood Donation Camp - Annual Yatra 2025",
+      "images": ["Blood2025_1.jpeg", "ViruBlood.jpeg", "RajBlood2025_3.jpeg"],
+      "description": "A blood donation camp was organized during the annual week of Shri Samarth Dhondutatya Maharaj. Many young people and citizens from the village as well as the surrounding areas participated spontaneously in this sacred initiative. Since blood donation is considered a great donation, everyone donated blood with the spirit of social service. This camp will help many needy patients get life donation. Blood donors were honored by giving them certificates. This initiative strengthened the spirit of service and cooperation in society. The blood donation camp created an atmosphere of joy and satisfaction among those present."
+    },
+    "event3": {
+      "title": "Annual Yatra 2023",
+      "images": ["All2023_1.jpeg", "Prize2023_2.jpeg", "Dance2023_3.jpeg"],
+      "description": "A cultural arts festival was organized during the annual week of Shri Samarth Dhondutatya Maharaj. Artists from the village as well as from outside participated spontaneously in this festival. Various types of dances were performed in this program. Everyone from small children to young people beautifully presented their artistic skills. The program became more colorful due to various dance forms. The audience present gave overwhelming applause to the artists. This cultural festival created an atmosphere of joy and enthusiasm."
+    },
+    "event4": {
+      "title": "Palkhi Procession Celebration 2018",
+      "images": ["Palkhi2018_1.jpeg", "Palkhi2018_2.jpeg", "Palkhi2018_3.jpg"],
+      "description": "A grand Palkhi procession was taken out during the annual week of Shri Samarth Dhondutatya Maharaj. Devotees from the village as well as from outside participated in this procession with great enthusiasm. The Palkhi procession started with the sound of bhajani mandals and the resonance of cymbals and drums. Devotees were walking behind the Palkhi chanting Harinama. Married women welcomed the Palkhi by performing aarti. The entire village was filled with a devotional atmosphere. This celebration created an atmosphere of joy, faith and enthusiasm among all devotees."
+    },
+    "event5": {
+      "title": "Annual Yatra 2017",
+      "images": ["Yatra2017_1.jpeg", "Yatra2017_2.jpeg", "Yatra2017_3.jpeg"],
+      "description": "A cultural arts festival was organized during the annual week of Shri Samarth Dhondutatya Maharaj. Artists from the village as well as from outside participated enthusiastically in this festival. Various types of dances were performed in the program. Everyone from small children to young people presented their artistic skills excellently. The entire program became more attractive and colorful due to various dance forms. The audience present gave spontaneous applause to the artists. This cultural festival created an atmosphere of joy and enthusiasm in the area."
+    }
+  },
+  "facility": {
+    "facilitiesData": {
+      "name": "Gangamata Pathak Mangalkaryalay, Viral",
+      "description": "Our Mangalkaryalaya offers excellent facilities for all your special occasions. Equipped with 24/7 water and electricity supply, separate well-furnished rooms for bride and groom, clean modern toilets, ample parking space, and professional catering services. We ensure your celebrations are memorable and hassle-free.",
+      "address": "Viral, Tq. Jalkot, Dist. Latur, Maharashtra",
+      "capacity": "Seating Capacity: 500 People",
+      "contact": "+91 8308197722",
+      "secretaryName": "Balaji Pillewad (Secretary)",
+      "presidentContact": "9922198206",
+      "secretaryContact": "8308197722",
+      "availableFor": {
+        "title": "Available For",
+        "items": [
+          "Marriage Ceremonies",
+          "Engagement Functions",
+          "Ring Ceremonies",
+          "Birthday Celebrations",
+          "Religious Functions"
+        ]
+      },
+      "facilitiesTitle": "Facilities Available",
+      "facilitiesList": [
+        "Professional Lighting Setup",
+        "Sound System",
+        "Water Supply",
+        "Catering Services",
+        "Parking Space",
+        "Air Conditioned Hall",
+        "Stage Decoration"
+      ]
+    }
   }
 }
 
