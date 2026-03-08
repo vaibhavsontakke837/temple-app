@@ -19,7 +19,7 @@ export default function HomeScreen() {
       <TimingCard />
 
       <SectionHeader title={t("upcomingEvents")} />
-      <EventsList limit={3} />
+      <EventsList limit={4} />
     </ScreenContainer>
   );
 }
