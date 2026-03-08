@@ -82,11 +82,11 @@ export default function OnboardingScreen() {
 
           <View style={styles.buttons}>
             <Pressable onPress={handleSkip} style={styles.skipBtn}>
-              <Text style={styles.skipText}>Skip</Text>
+              <Text style={styles.skipText}>वगळा</Text>
             </Pressable>
             <Pressable onPress={handleNext} style={styles.nextBtn}>
               <Text style={styles.nextText}>
-                {currentIndex === ONBOARDING_DATA.length - 1 ? 'Get Started' : 'Next'}
+                {currentIndex === ONBOARDING_DATA.length - 1 ? 'सुरुवात करा' : 'पुढे'}
               </Text>
             </Pressable>
           </View>
