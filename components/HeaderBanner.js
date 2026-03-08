@@ -1,7 +1,4 @@
-import { useTemple } from "@/context/TempleContext";
-import { useThemeContext } from "@/context/ThemeContext";
 import { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { Dimensions, Image, ScrollView, StyleSheet, View } from "react-native";
 
 const BANNER_IMAGES = [
@@ -10,10 +7,7 @@ const BANNER_IMAGES = [
 ];
 
 export default function HeaderBanner() {
-  const { t } = useTranslation();
   const { width } = Dimensions.get("window");
-  const { selectedTempleId } = useTemple();
-  const { theme } = useThemeContext();
 
   const scrollViewRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);

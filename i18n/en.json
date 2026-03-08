@@ -255,53 +255,7 @@
       "notifyAt": "2026-12-20T08:00:00"
     }
   },
-  "aartiData": {
-    "aarti1": {
-      "title": "Maha Aarti",
-      "desc": "Special evening aarti with bhajan and prasadam."
-    },
-    "aarti2": {
-      "title": "Morning Aarti",
-      "desc": "Morning aarti performed at dawn."
-    },
-    "aarti3": {
-      "title": "Evening Aarti",
-      "desc": "Evening devotional aarti with lamps and chants."
-    },
-    "audioVideo": "Audio & Video",
-    "audioSection": "Audio",
-    "videoSection": "Video",
-    "audioData": {
-      "audio1": {
-        "title": "Morning Bhajan",
-        "desc": "Peaceful bhajan to start the day"
-      },
-      "audio2": {
-        "title": "Evening Pravachan",
-        "desc": "Spiritual discourse in the evening"
-      }
-    },
-    "videoData": {
-      "video1": {
-        "title": "Maha Aarti",
-        "desc": "Sacred evening aarti ceremony"
-      },
-      "video2": {
-        "title": "Annual Yatra",
-        "desc": "Highlights from the annual yatra"
-      }
-    },
-    "drawer": {
-      "home": "Home",
-      "about": "About Temple",
-      "gallery": "Gallery",
-      "audioVideo": "Audio & Video",
-      "events": "Events",
-      "donation": "Donation",
-      "contact": "Contact",
-      "settings": "Settings"
-    }
-  },
+  
   "temples": {
     "viral": {
       "name": "Viral Sansthan",
