@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Switch, StyleSheet, Text, View } from "react-native";
-import i18n from "../i18n";
 import { useLanguage } from "../context/LanguageContext";
 import { useThemeContext } from "../context/ThemeContext";
 
@@ -10,9 +9,8 @@ import SectionHeader from "../components/mobile/SectionHeader";
 
 export default function SettingsScreen() {
   const { t } = useTranslation();
-  const { changeLanguage } = useLanguage();
+  const { changeLanguage, currentLanguage } = useLanguage();
   const { mode, toggleTheme, theme } = useThemeContext();
-  const currentLang = i18n.language;
 
   return (
     <ScreenContainer>
@@ -20,13 +18,13 @@ export default function SettingsScreen() {
 
       <LanguageCard
         title={t("english")}
-        selected={currentLang === "en"}
+        selected={currentLanguage === "en"}
         onPress={() => changeLanguage("en")}
       />
 
       <LanguageCard
         title={t("marathi")}
-        selected={currentLang === "mr"}
+        selected={currentLanguage === "mr"}
         onPress={() => changeLanguage("mr")}
       />
 

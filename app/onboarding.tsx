@@ -9,28 +9,28 @@ const { width, height } = Dimensions.get('window');
 const ONBOARDING_DATA = [
   {
     id: 1,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'श्री समर्थ धोंडुतात्या प्रसन्ना ॲप मध्ये आपले स्वागत आहे',
     description: 'दैवी आशीर्वाद आणि आध्यात्मिक शांततेचा अनुभव घ्या',
   },
   {
     id: 2,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'हे केवळ अ‍ॅप नाही – ही आपल्या श्रद्धेची आठवण आहे',
   },
   {
     id: 3,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'हे केवळ माहिती नाही – हा आपल्या भक्तीचा वारसा आहे',
   },
   {
     id: 4,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'ही केवळ टेक्नॉलॉजी नाही – हा धोंडुतात्या महाराजांचा आशिर्वाद आहे',
   },
   {
     id: 6,
-    image: require('../assets/gallery/logonew.jpg'),
+    image: require('../assets/gallery/logonew.png'),
     title: 'भक्ती, श्रद्धा आणि परंपरेचा डिजिटल प्रवास',
   }
 ];

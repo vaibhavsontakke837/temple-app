@@ -15,16 +15,7 @@
     },
     "production": {
       "android": {
-        "buildType": "aab",
-        "gradleCommand": ":app:bundleRelease"
-      }
-    }
-  },
-  "submit": {
-    "production": {
-      "android": {
-        "serviceAccountKeyPath": "path/to/api-key.json",
-        "track": "internal"
+        "buildType": "aab"
       }
     }
   }

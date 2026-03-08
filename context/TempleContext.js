@@ -1,4 +1,3 @@
-import { TEMPLES } from "@/shared/temples";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { createContext, useContext, useEffect, useState } from "react";
 
@@ -6,8 +5,16 @@ const STORAGE_KEY = "SELECTED_TEMPLE_ID";
 
 const TempleContext = createContext(null);
 
+// Default temple data
+const DEFAULT_TEMPLE = {
+  id: "temple1",
+  name: "श्री समर्थ सद्गुरू धोंडूतात्या महाराज संस्थान, विराळ",
+  location: "विराळ, ता. जळकोट, जि. लातूर"
+};
+
 export const TempleProvider = ({ children }) => {
-  const [selectedTempleId, setSelectedTempleId] = useState(null);
+  const [selectedTempleId, setSelectedTempleId] = useState("temple1");
+  const [selectedTemple, setSelectedTemple] = useState(DEFAULT_TEMPLE);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -16,9 +23,8 @@ export const TempleProvider = ({ children }) => {
         const storedId = await AsyncStorage.getItem(STORAGE_KEY);
         if (storedId) {
           setSelectedTempleId(storedId);
-        } else {
-          setSelectedTempleId(TEMPLES[0].id); // default
         }
+        setSelectedTemple(DEFAULT_TEMPLE);
       } catch (e) {
         console.warn("Failed to load temple", e);
       } finally {
@@ -37,10 +43,6 @@ export const TempleProvider = ({ children }) => {
       console.warn("Failed to save temple", e);
     }
   };
-
-  const selectedTemple = TEMPLES.find(
-    (t) => t.id === selectedTempleId
-  );
 
   return (
     <TempleContext.Provider

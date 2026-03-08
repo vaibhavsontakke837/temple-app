@@ -6,11 +6,11 @@
     "description": "Official app for Shri Samarth Dhondutatya Maharaj Temple, Viral. Access temple information, events, aarti timings, and spiritual content.",
     "privacy": "https://vaibhavsontakke837.github.io/temple-app-privacy/",
     "orientation": "portrait",
-    "icon": "./assets/gallery/icon.png",
+    "icon": "./assets/gallery/logonew.png",
     "scheme": "templeapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/gallery/splash-icon.png",
+      "image": "./assets/gallery/logonew.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,9 +20,9 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/gallery/android-icon-foreground.png",
-        "backgroundImage": "./assets/gallery/android-icon-background.png",
-        "monochromeImage": "./assets/gallery/android-icon-monochrome.png"
+        "foregroundImage": "./assets/gallery/logonew.png",
+        "backgroundImage": "./assets/gallery/logonew.png",
+        "monochromeImage": "./assets/gallery/logonew.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
@@ -35,7 +35,7 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/gallery/favicon.png"
+      "favicon": "./assets/gallery/logonew.png"
     },
     "plugins": [
       "expo-router",
