@@ -6,7 +6,7 @@
 #
 # For more details, see
 #   http://developer.android.com/guide/developing/tools/proguard.html
-
+react-native-gesture-handler
 # react-native-reanimated
 -keep class com.swmansion.reanimated.** { *; }
 -keep class com.facebook.react.turbomodule.** { *; }

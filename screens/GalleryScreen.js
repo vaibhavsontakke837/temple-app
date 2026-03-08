@@ -64,7 +64,6 @@ export default function GalleryScreen() {
             <ImageCard 
               source={item.image} 
               style={{ width: CARD_WIDTH }} 
-              showDownload={false}
             />
           </Pressable>
         )}
